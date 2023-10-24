@@ -1,6 +1,6 @@
 {
   "name": "@philippdormann/sevdesk",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "license": "MIT",
   "type": "module",
   "scripts": {
@@ -10,23 +10,23 @@
     "./dist",
     "./package.json"
   ],
-  "main": "./dist/index.cjs",
-  "module": "./dist/index.mjs",
-  "types": "./dist/index.d.ts",
+  "main": "./dist/api.cjs",
+  "module": "./dist/api.mjs",
+  "types": "./dist/api.d.ts",
   "exports": {
     ".": {
-      "require": "./dist/index.cjs",
-      "import": "./dist/index.mjs",
-      "types": "./dist/index.d.ts"
+      "require": "./dist/api.cjs",
+      "import": "./dist/api.mjs",
+      "types": "./dist/api.d.ts"
     }
   },
   "description": "unofficial sevdesk js/ts client",
   "dependencies": {
-    "axios": "1.4.0"
+    "axios": "1.5.1"
   },
   "devDependencies": {
     "@odit/swagger-axios-codegen": "^1.0.0",
     "esno": "0.17.0",
-    "unbuild": "1.2.1"
+    "unbuild": "2.0.0"
   }
 }
