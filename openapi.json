@@ -125,9 +125,7 @@
   "paths": {
     "/CheckAccount": {
       "get": {
-        "tags": [
-          "CheckAccount"
-        ],
+        "tags": ["CheckAccount"],
         "summary": "Retrieve check accounts",
         "description": "Retrieve all check accounts",
         "operationId": "getCheckAccounts",
@@ -163,9 +161,7 @@
         "deprecated": false
       },
       "post": {
-        "tags": [
-          "CheckAccount"
-        ],
+        "tags": ["CheckAccount"],
         "summary": "Create a new check account",
         "description": "Creates a new banking account on which transactions can be created.",
         "operationId": "createCheckAccount",
@@ -212,9 +208,7 @@
     },
     "/CheckAccount/{checkAccountId}": {
       "get": {
-        "tags": [
-          "CheckAccount"
-        ],
+        "tags": ["CheckAccount"],
         "summary": "Find check account by ID",
         "description": "Retrieve an existing check account",
         "operationId": "getCheckAccountById",
@@ -261,9 +255,7 @@
         "deprecated": false
       },
       "put": {
-        "tags": [
-          "CheckAccount"
-        ],
+        "tags": ["CheckAccount"],
         "summary": "Update an existing check account",
         "description": "Update a check account",
         "operationId": "updateCheckAccount",
@@ -311,9 +303,7 @@
         }
       },
       "delete": {
-        "tags": [
-          "CheckAccount"
-        ],
+        "tags": ["CheckAccount"],
         "summary": "Deletes a check account",
         "operationId": "deleteCheckAccount",
         "parameters": [
@@ -363,9 +353,7 @@
     },
     "/CheckAccount/{checkAccountId}/getBalanceAtDate": {
       "get": {
-        "tags": [
-          "CheckAccount"
-        ],
+        "tags": ["CheckAccount"],
         "summary": "Get the balance at a given date",
         "description": "Get the balance, calculated as the sum of all transactions sevDesk knows, up to and including the given date. Note that this balance does not have to be the actual bank account balance, e.g. if sevDesk did not import old transactions.",
         "operationId": "getBalanceAtDate",
@@ -422,9 +410,7 @@
     },
     "/CheckAccountTransaction": {
       "get": {
-        "tags": [
-          "CheckAccountTransaction"
-        ],
+        "tags": ["CheckAccountTransaction"],
         "summary": "Retrieve transactions",
         "description": "Retrieve all transactions depending on the filters defined in the query.",
         "operationId": "getTransactions",
@@ -534,9 +520,7 @@
         "deprecated": false
       },
       "post": {
-        "tags": [
-          "CheckAccountTransaction"
-        ],
+        "tags": ["CheckAccountTransaction"],
         "summary": "Create a new transaction",
         "description": "Creates a new transaction on a check account.",
         "operationId": "createTransaction",
@@ -575,9 +559,7 @@
     },
     "/CheckAccountTransaction/{checkAccountTransactionId}": {
       "get": {
-        "tags": [
-          "CheckAccountTransaction"
-        ],
+        "tags": ["CheckAccountTransaction"],
         "summary": "Find check account transaction by ID",
         "description": "Retrieve an existing check account transaction",
         "operationId": "getCheckAccountTransactionById",
@@ -624,9 +606,7 @@
         "deprecated": false
       },
       "put": {
-        "tags": [
-          "CheckAccountTransaction"
-        ],
+        "tags": ["CheckAccountTransaction"],
         "summary": "Update an existing check account transaction",
         "description": "Update a check account transaction",
         "operationId": "updateCheckAccountTransaction",
@@ -674,9 +654,7 @@
         }
       },
       "delete": {
-        "tags": [
-          "CheckAccountTransaction"
-        ],
+        "tags": ["CheckAccountTransaction"],
         "summary": "Deletes a check account transaction",
         "operationId": "deleteCheckAccountTransaction",
         "parameters": [
@@ -726,9 +704,7 @@
     },
     "/Contact/Factory/getNextCustomerNumber": {
       "get": {
-        "tags": [
-          "Contact"
-        ],
+        "tags": ["Contact"],
         "summary": "Get next free customer number",
         "description": "Retrieves the next available customer number. Avoids duplicates.",
         "operationId": "getNextCustomerNumber",
@@ -764,9 +740,7 @@
     },
     "/Contact/Factory/findContactsByCustomFieldValue": {
       "get": {
-        "tags": [
-          "Contact"
-        ],
+        "tags": ["Contact"],
         "summary": "Find contacts by custom field value",
         "description": "Returns an array of contacts having a certain custom field value set.",
         "operationId": "findContactsByCustomFieldValue",
@@ -826,9 +800,7 @@
     },
     "/Contact/Mapper/checkCustomerNumberAvailability": {
       "get": {
-        "tags": [
-          "Contact"
-        ],
+        "tags": ["Contact"],
         "summary": "Check if a customer number is available",
         "description": "Checks if a given customer number is available or already used.",
         "operationId": "contactCustomerNumberAvailabilityCheck",
@@ -875,9 +847,7 @@
     },
     "/Contact": {
       "get": {
-        "tags": [
-          "Contact"
-        ],
+        "tags": ["Contact"],
         "summary": "Retrieve contacts",
         "description": "There are a multitude of parameter which can be used to filter.<br>\r\n     A few of them are attached but\r\n     for a complete list please check out <a href='https://api.sevdesk.de/#section/How-to-filter-for-certain-contacts'>this</a> list",
         "operationId": "getContacts",
@@ -890,10 +860,7 @@
             "explode": true,
             "schema": {
               "type": "string",
-              "enum": [
-                "0",
-                "1"
-              ]
+              "enum": ["0", "1"]
             }
           },
           {
@@ -939,9 +906,7 @@
         "deprecated": false
       },
       "post": {
-        "tags": [
-          "Contact"
-        ],
+        "tags": ["Contact"],
         "summary": "Create a new contact",
         "description": "Creates a new contact.<br>\r\n     For adding addresses and communication ways, you will need to use the ContactAddress and CommunicationWay endpoints.",
         "operationId": "createContact",
@@ -981,9 +946,7 @@
     },
     "/Contact/{contactId}": {
       "get": {
-        "tags": [
-          "Contact"
-        ],
+        "tags": ["Contact"],
         "summary": "Find contact by ID",
         "description": "Returns a single contact",
         "operationId": "getContactById",
@@ -1029,9 +992,7 @@
         }
       },
       "put": {
-        "tags": [
-          "Contact"
-        ],
+        "tags": ["Contact"],
         "summary": "Update a existing contact",
         "description": "Update a contact",
         "operationId": "updateContact",
@@ -1079,9 +1040,7 @@
         }
       },
       "delete": {
-        "tags": [
-          "Contact"
-        ],
+        "tags": ["Contact"],
         "summary": "Deletes a contact",
         "operationId": "deleteContact",
         "parameters": [
@@ -1131,9 +1090,7 @@
     },
     "/Contact/{contactId}/getTabsItemCount": {
       "get": {
-        "tags": [
-          "Contact"
-        ],
+        "tags": ["Contact"],
         "summary": "Get number of all items",
         "description": "Get number of all invoices, orders, etc. of a specified contact",
         "operationId": "getContactTabsItemCountById",
@@ -1203,9 +1160,7 @@
     },
     "/ContactAddress": {
       "post": {
-        "tags": [
-          "ContactAddress"
-        ],
+        "tags": ["ContactAddress"],
         "summary": "Create a new contact address",
         "description": "Creates a new contact address.",
         "operationId": "createContactAddress",
@@ -1243,9 +1198,7 @@
         "deprecated": false
       },
       "get": {
-        "tags": [
-          "ContactAddress"
-        ],
+        "tags": ["ContactAddress"],
         "summary": "Retrieve contact addresses",
         "description": "Retrieve all contact addresses",
         "operationId": "getContactAddresses",
@@ -1283,9 +1236,7 @@
     },
     "/ContactAddress/{contactAddressId}": {
       "get": {
-        "tags": [
-          "ContactAddress"
-        ],
+        "tags": ["ContactAddress"],
         "summary": "Find contact address by ID",
         "description": "Returns a single contact address",
         "operationId": "contactAddressId",
@@ -1331,9 +1282,7 @@
         }
       },
       "put": {
-        "tags": [
-          "ContactAddress"
-        ],
+        "tags": ["ContactAddress"],
         "summary": "update a existing contact address",
         "description": "update a existing contact address.",
         "operationId": "updateContactAddress",
@@ -1382,9 +1331,7 @@
         "deprecated": false
       },
       "delete": {
-        "tags": [
-          "ContactAddress"
-        ],
+        "tags": ["ContactAddress"],
         "summary": "Deletes a contact address",
         "operationId": "deleteContactAddress",
         "parameters": [
@@ -1434,9 +1381,7 @@
     },
     "/CommunicationWay": {
       "get": {
-        "tags": [
-          "CommunicationWay"
-        ],
+        "tags": ["CommunicationWay"],
         "summary": "Retrieve communication ways",
         "description": "Returns all communication ways which have been added up until now. Filters can be added.",
         "operationId": "getCommunicationWays",
@@ -1449,12 +1394,7 @@
             "explode": true,
             "schema": {
               "type": "string",
-              "enum": [
-                "PHONE",
-                "EMAIL",
-                "WEB",
-                "MOBILE"
-              ]
+              "enum": ["PHONE", "EMAIL", "WEB", "MOBILE"]
             }
           },
           {
@@ -1465,10 +1405,7 @@
             "explode": true,
             "schema": {
               "type": "string",
-              "enum": [
-                "0",
-                "1"
-              ]
+              "enum": ["0", "1"]
             }
           }
         ],
@@ -1504,9 +1441,7 @@
         "deprecated": false
       },
       "post": {
-        "tags": [
-          "CommunicationWay"
-        ],
+        "tags": ["CommunicationWay"],
         "summary": "Create a new contact communication way",
         "description": "Creates a new contact communication way.",
         "operationId": "createCommunicationWay",
@@ -1546,9 +1481,7 @@
     },
     "/CommunicationWay/{communicationWayId}": {
       "get": {
-        "tags": [
-          "CommunicationWay"
-        ],
+        "tags": ["CommunicationWay"],
         "summary": "Find communication way by ID",
         "description": "Returns a single communication way",
         "operationId": "getCommunicationWayById",
@@ -1594,9 +1527,7 @@
         }
       },
       "delete": {
-        "tags": [
-          "CommunicationWay"
-        ],
+        "tags": ["CommunicationWay"],
         "summary": "Deletes a communication way",
         "operationId": "deleteCommunicationWay",
         "parameters": [
@@ -1644,9 +1575,7 @@
         }
       },
       "put": {
-        "tags": [
-          "CommunicationWay"
-        ],
+        "tags": ["CommunicationWay"],
         "summary": "Update a existing communication way",
         "description": "Update a communication way",
         "operationId": "UpdateCommunicationWay",
@@ -1696,9 +1625,7 @@
     },
     "/CommunicationWayKey": {
       "get": {
-        "tags": [
-          "CommunicationWay"
-        ],
+        "tags": ["CommunicationWay"],
         "summary": "Retrieve communication way keys",
         "description": "Returns all communication way keys.",
         "operationId": "getCommunicationWayKeys",
@@ -1775,9 +1702,7 @@
     },
     "/AccountingContact": {
       "post": {
-        "tags": [
-          "AccountingContact"
-        ],
+        "tags": ["AccountingContact"],
         "summary": "Create a new accounting contact",
         "description": "Creates a new accounting contact.",
         "operationId": "createAccountingContact",
@@ -1817,9 +1742,7 @@
     },
     "/AccountingContact/{accountingContactId}": {
       "get": {
-        "tags": [
-          "AccountingContact"
-        ],
+        "tags": ["AccountingContact"],
         "summary": "Find accounting contact by ID",
         "description": "Returns a single accounting contac",
         "operationId": "getAccountingContactById",
@@ -1865,9 +1788,7 @@
         }
       },
       "put": {
-        "tags": [
-          "AccountingContact"
-        ],
+        "tags": ["AccountingContact"],
         "summary": "Update an existing accounting contact",
         "description": "Attention, updating an existing AccountingContact can lead to **booking errors**, especially in the **DATEV export**.\nCompatibility of sevDesk with DATEV is no longer guaranteed.",
         "operationId": "updateAccountingContact",
@@ -1915,9 +1836,7 @@
         }
       },
       "delete": {
-        "tags": [
-          "AccountingContact"
-        ],
+        "tags": ["AccountingContact"],
         "summary": "Deletes an accounting contact",
         "description": "Attention, deleting an existing AccountingContact can lead to **booking errors**, especially in the **DATEV export**.\nCompatibility of sevDesk with DATEV is no longer guaranteed.",
         "operationId": "deleteAccountingContact",
@@ -1968,9 +1887,7 @@
     },
     "/Textparser/fetchDictionaryEntriesByType": {
       "get": {
-        "tags": [
-          "ContactField"
-        ],
+        "tags": ["ContactField"],
         "summary": "Retrieve Placeholders",
         "description": "Retrieve all Placeholders",
         "operationId": "getPlaceholder",
@@ -1999,13 +1916,7 @@
             "required": false,
             "schema": {
               "type": "string",
-              "enum": [
-                "Invoice",
-                "CreditNote",
-                "Order",
-                "Contact",
-                "Letter"
-              ]
+              "enum": ["Invoice", "CreditNote", "Order", "Contact", "Letter"]
             }
           }
         ],
@@ -2039,9 +1950,7 @@
     },
     "/ContactCustomField": {
       "get": {
-        "tags": [
-          "ContactField"
-        ],
+        "tags": ["ContactField"],
         "summary": "Retrieve contact fields",
         "description": "Retrieve all contact fields",
         "operationId": "getContactFields",
@@ -2072,9 +1981,7 @@
         }
       },
       "post": {
-        "tags": [
-          "ContactField"
-        ],
+        "tags": ["ContactField"],
         "summary": "Create contact field",
         "description": "Create contact field",
         "operationId": "createContactField",
@@ -2109,9 +2016,7 @@
     },
     "/ContactCustomField/{contactCustomFieldId}": {
       "get": {
-        "tags": [
-          "ContactField"
-        ],
+        "tags": ["ContactField"],
         "summary": "Retrieve contact fields",
         "description": "Retrieve all contact fields",
         "operationId": "getContactFieldsById",
@@ -2153,9 +2058,7 @@
         }
       },
       "put": {
-        "tags": [
-          "ContactField"
-        ],
+        "tags": ["ContactField"],
         "summary": "Update a contact field",
         "description": "Update a contact field",
         "operationId": "updateContactfield",
@@ -2200,9 +2103,7 @@
         }
       },
       "delete": {
-        "tags": [
-          "ContactField"
-        ],
+        "tags": ["ContactField"],
         "summary": "delete a contact field",
         "operationId": "deleteContactCustomFieldId",
         "parameters": [
@@ -2249,9 +2150,7 @@
     },
     "/ContactCustomFieldSetting": {
       "get": {
-        "tags": [
-          "ContactField"
-        ],
+        "tags": ["ContactField"],
         "summary": "Retrieve contact field settings",
         "description": "Retrieve all contact field settings",
         "operationId": "getContactFieldSettings",
@@ -2282,9 +2181,7 @@
         }
       },
       "post": {
-        "tags": [
-          "ContactField"
-        ],
+        "tags": ["ContactField"],
         "summary": "Create contact field setting",
         "description": "Create contact field setting",
         "operationId": "createContactFieldSetting",
@@ -2326,9 +2223,7 @@
     },
     "/ContactCustomFieldSetting/{contactCustomFieldSettingId}": {
       "get": {
-        "tags": [
-          "ContactField"
-        ],
+        "tags": ["ContactField"],
         "summary": "Find contact field setting by ID",
         "description": "Returns a single contact field setting",
         "operationId": "getContactFieldSettingById",
@@ -2370,9 +2265,7 @@
         }
       },
       "put": {
-        "tags": [
-          "ContactField"
-        ],
+        "tags": ["ContactField"],
         "summary": "Update contact field setting",
         "description": "Update an existing contact field  setting",
         "operationId": "updateContactFieldSetting",
@@ -2416,9 +2309,7 @@
         }
       },
       "delete": {
-        "tags": [
-          "ContactField"
-        ],
+        "tags": ["ContactField"],
         "summary": "Deletes a contact field setting",
         "operationId": "deleteContactFieldSetting",
         "parameters": [
@@ -2468,9 +2359,7 @@
     },
     "/ContactCustomFieldSetting/{contactCustomFieldSettingId}/getReferenceCount": {
       "get": {
-        "tags": [
-          "ContactField"
-        ],
+        "tags": ["ContactField"],
         "summary": "Receive count reference",
         "description": "Receive count reference",
         "operationId": "getReferenceCount",
@@ -2520,9 +2409,7 @@
     },
     "/CreditNote": {
       "get": {
-        "tags": [
-          "CreditNote"
-        ],
+        "tags": ["CreditNote"],
         "summary": "Retrieve CreditNote",
         "description": "There are a multitude of parameter which can be used to filter.",
         "operationId": "getCreditNotes",
@@ -2535,14 +2422,7 @@
             "explode": true,
             "schema": {
               "type": "string",
-              "enum": [
-                "100",
-                "200",
-                "300",
-                "500",
-                "750",
-                "1000"
-              ]
+              "enum": ["100", "200", "300", "500", "750", "1000"]
             }
           },
           {
@@ -2612,9 +2492,7 @@
     },
     "/CreditNote/Factory/saveCreditNote": {
       "post": {
-        "tags": [
-          "CreditNote"
-        ],
+        "tags": ["CreditNote"],
         "summary": "Create a new creditNote",
         "description": "The list of parameters starts with the credit note array.<br> This array contains all required attributes for a complete credit note.<br> Most of the attributes are covered in the credit note attribute list, there are only two parameters standing out, namely <b>mapAll</b> and <b>objectName</b>.<br> These are just needed for our system and you always need to provide them.<br> The list of parameters then continues with the credit note position array.<br> With this array you have the possibility to add multiple positions at once.<br> In the example it only contains one position, again together with the parameters <b>mapAll</b> and <b>objectName</b>, however, you can add more credit note positions by extending the array.<br> So if you wanted to add another position, you would add the same list of parameters with an incremented array index of \"1\" instead of \"0\".<br><br> The list ends with the five parameters creditNotePosDelete, discountSave, discountDelete, takeDefaultAddress and forCashRegister.<br> They only play a minor role if you only want to create a credit note but we will shortly explain what they can do.<br> With creditNotePosDelete you have to option to delete credit note positions as this request can also be used to update credit notes.<br> Both discount parameters are deprecated and have no use for credit notes, however they need to be provided in case you want to use the following two parameters.<br> With takeDefaultAddress you can specify that the first address of the contact you are using for the credit note is taken for the credit note address attribute automatically, so you don't need to provide the address yourself.<br> Finally, the forCashRegister parameter needs to be set to <b>true</b> if your credit note is to be booked on the cash register.<br> If you want to know more about these parameters, for example if you want to use this request to update credit notes, feel free to contact our support.<br> Finally, after covering all parameters, they only important information left, is that the order of the last five attributes always needs to be kept.<br> You will also always need to provide all of them, as otherwise the request won't work properly.",
         "operationId": "createcreditNote",
@@ -2653,9 +2531,7 @@
     },
     "/CreditNote/Factory/createFromInvoice": {
       "post": {
-        "tags": [
-          "CreditNote"
-        ],
+        "tags": ["CreditNote"],
         "summary": "Creates a new creditNote from an invoice",
         "description": "Use this endpoint to create a new creditNote from an invoice.",
         "operationId": "createCreditNoteFromInvoice",
@@ -2664,16 +2540,11 @@
             "application/json": {
               "schema": {
                 "type": "object",
-                "required": [
-                  "invoice"
-                ],
+                "required": ["invoice"],
                 "properties": {
                   "invoice": {
                     "type": "object",
-                    "required": [
-                      "id",
-                      "objectName"
-                    ],
+                    "required": ["id", "objectName"],
                     "properties": {
                       "id": {
                         "description": "The id of the existing invoice",
@@ -2741,9 +2612,7 @@
     },
     "/CreditNote/Factory/createFromVoucher": {
       "post": {
-        "tags": [
-          "CreditNote"
-        ],
+        "tags": ["CreditNote"],
         "summary": "Creates a new creditNote from a voucher",
         "description": "Use this endpoint to create a new creditNote from a voucher.",
         "operationId": "createCreditNoteFromVoucher",
@@ -2752,16 +2621,11 @@
             "application/json": {
               "schema": {
                 "type": "object",
-                "required": [
-                  "voucher"
-                ],
+                "required": ["voucher"],
                 "properties": {
                   "voucher": {
                     "type": "object",
-                    "required": [
-                      "id",
-                      "objectName"
-                    ],
+                    "required": ["id", "objectName"],
                     "properties": {
                       "id": {
                         "description": "The id of the existing Voucher",
@@ -2829,9 +2693,7 @@
     },
     "/CreditNote/{creditNoteId}": {
       "get": {
-        "tags": [
-          "CreditNote"
-        ],
+        "tags": ["CreditNote"],
         "summary": "Find creditNote by ID",
         "description": "Returns a single creditNote",
         "operationId": "getcreditNoteById",
@@ -2877,9 +2739,7 @@
         }
       },
       "put": {
-        "tags": [
-          "CreditNote"
-        ],
+        "tags": ["CreditNote"],
         "summary": "Update an existing creditNote",
         "description": "Update a creditNote",
         "operationId": "updatecreditNote",
@@ -2927,9 +2787,7 @@
         }
       },
       "delete": {
-        "tags": [
-          "CreditNote"
-        ],
+        "tags": ["CreditNote"],
         "summary": "Deletes an creditNote",
         "operationId": "deletecreditNote",
         "parameters": [
@@ -2979,9 +2837,7 @@
     },
     "/CreditNote/{creditNoteId}/sendByWithRender": {
       "get": {
-        "tags": [
-          "CreditNote"
-        ],
+        "tags": ["CreditNote"],
         "summary": "Send credit note by printing",
         "description": "Sending a credit note to end-customers is an important part of the bookkeeping process.<br> Depending on the way you want to send the credit note, you need to use different endpoints.<br> Let's start with just printing out the credit note, meaning we only need to render the pdf.",
         "operationId": "sendCreditNoteByPrinting",
@@ -3031,9 +2887,7 @@
     },
     "/CreditNote/{creditNoteId}/sendBy": {
       "put": {
-        "tags": [
-          "CreditNote"
-        ],
+        "tags": ["CreditNote"],
         "summary": "Mark credit note as sent",
         "description": "Marks an credit note as sent by a chosen send type.",
         "operationId": "creditNoteSendBy",
@@ -3053,20 +2907,12 @@
           "content": {
             "application/json": {
               "schema": {
-                "required": [
-                  "sendType",
-                  "sendDraft"
-                ],
+                "required": ["sendType", "sendDraft"],
                 "properties": {
                   "sendType": {
                     "description": "Specifies the way in which the credit note was sent to the customer.<br>\r\n     Accepts 'VPR' (print), 'VP' (postal), 'VM' (mail) and 'VPDF' (downloaded pfd).",
                     "type": "string",
-                    "enum": [
-                      "VPR",
-                      "VP",
-                      "VM",
-                      "VPDF"
-                    ],
+                    "enum": ["VPR", "VP", "VM", "VPDF"],
                     "example": "VPDF"
                   },
                   "sendDraft": {
@@ -3105,9 +2951,7 @@
     },
     "/CreditNote/{creditNoteId}/getPdf": {
       "get": {
-        "tags": [
-          "CreditNote"
-        ],
+        "tags": ["CreditNote"],
         "summary": "Retrieve pdf document of a credit note",
         "description": "Retrieves the pdf document of a credit note with additional metadata.",
         "operationId": "creditNoteGetPdf",
@@ -3183,9 +3027,7 @@
     },
     "/CreditNote/{creditNoteId}/sendViaEmail": {
       "post": {
-        "tags": [
-          "CreditNote"
-        ],
+        "tags": ["CreditNote"],
         "summary": "Send credit note via email",
         "description": "This endpoint sends the specified credit note to a customer via email.<br>\r\n    This will automatically mark the credit note as sent.<br>\r\n    Please note, that in production an credit note is not allowed to be changed after this happened!",
         "operationId": "sendCreditNoteViaEMail",
@@ -3205,11 +3047,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "required": [
-                  "toEmail",
-                  "subject",
-                  "text"
-                ],
+                "required": ["toEmail", "subject", "text"],
                 "properties": {
                   "toEmail": {
                     "description": "The recipient of the email.",
@@ -3280,9 +3118,7 @@
     },
     "/CreditNote/{creditNoteId}/bookAmount": {
       "put": {
-        "tags": [
-          "CreditNote"
-        ],
+        "tags": ["CreditNote"],
         "summary": "Book a credit note",
         "description": "Booking the credit note with a transaction is probably the most important part in the bookkeeping  process.<br> There are several ways on correctly booking a credit note, all by using the same endpoint.<br> Conveniently, the booking process is exactly the same as the process for invoices and vouchers.<br> For this reason, you can have a look at it in the  <a href='https://api.sevdesk.de/#section/How-to-book-an-invoice'>invoice chapter</a> and all you need to do is to change \"Invoice\" into \"CreditNote\" in the URL.",
         "operationId": "bookCreditNote",
@@ -3302,12 +3138,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "required": [
-                  "amount",
-                  "date",
-                  "type",
-                  "checkAccount"
-                ],
+                "required": ["amount", "date", "type", "checkAccount"],
                 "properties": {
                   "amount": {
                     "description": "Amount which should be booked. Can also be a partial amount.",
@@ -3320,21 +3151,11 @@
                   "type": {
                     "description": "Define a type for the booking.<br>\r\n    The following type abbreviations are available (abbreviation <-> meaning).<br>\r\n    <ul>\r\n    <li>N <-> Normal booking / partial booking</li>\r\n    <li>CB <-> Reduced amount due to discount (skonto)</li>\r\n    <li>CF <-> Reduced/Higher amount due to currency fluctuations</li>\r\n    <li>O <-> Reduced/Higher amount due to other reasons</li>\r\n    <li>OF <-> Higher amount due to reminder charges</li>\r\n    <li>MTC <-> Reduced amount due to the monetary traffic costs</li>\r\n    </ul>",
                     "type": "string",
-                    "enum": [
-                      "N",
-                      "CB",
-                      "CF",
-                      "O",
-                      "OF",
-                      "MTC"
-                    ]
+                    "enum": ["N", "CB", "CF", "O", "OF", "MTC"]
                   },
                   "checkAccount": {
                     "description": "The check account on which should be booked.",
-                    "required": [
-                      "id",
-                      "objectName"
-                    ],
+                    "required": ["id", "objectName"],
                     "properties": {
                       "id": {
                         "description": "The id of the check account on which should be booked.",
@@ -3350,10 +3171,7 @@
                   },
                   "checkAccountTransaction": {
                     "description": "The check account transaction on which should be booked.<br>\r\n    The transaction will be linked to the credit note.",
-                    "required": [
-                      "id",
-                      "objectName"
-                    ],
+                    "required": ["id", "objectName"],
                     "properties": {
                       "id": {
                         "description": "The id of the check account transaction on which should be booked.",
@@ -3405,10 +3223,7 @@
                     },
                     "creditNote": {
                       "type": "object",
-                      "required": [
-                        "id",
-                        "objectName"
-                      ],
+                      "required": ["id", "objectName"],
                       "properties": {
                         "id": {
                           "description": "The id of the credit note",
@@ -3442,10 +3257,7 @@
                     "sevClient": {
                       "type": "object",
                       "description": "Client to which creditNote belongs. Will be filled automatically",
-                      "required": [
-                        "id",
-                        "objectName"
-                      ],
+                      "required": ["id", "objectName"],
                       "properties": {
                         "id": {
                           "description": "Unique identifier of the client",
@@ -3478,9 +3290,7 @@
     },
     "/SevClient/{SevClientId}/updateExportConfig": {
       "put": {
-        "tags": [
-          "Export"
-        ],
+        "tags": ["Export"],
         "summary": "Update export config",
         "description": "Update export config to export datev CSV",
         "operationId": "updateExportConfig",
@@ -3557,9 +3367,7 @@
         "summary": "Export datev",
         "description": "Datev export as zip with csv´s. Before you can perform the datev export,  you must first set the \"accountingYearBegin\". To do this, you must use the  <a href='https://api.sevdesk.de/#tag/Export/operation/updateExportConfig'>updateExportConfig</a> endpoint.",
         "operationId": "exportDatev",
-        "tags": [
-          "Export"
-        ],
+        "tags": ["Export"],
         "parameters": [
           {
             "name": "Download",
@@ -3659,9 +3467,7 @@
         "summary": "Export invoice",
         "description": "Export all invoices as csv",
         "operationId": "exportInvoice",
-        "tags": [
-          "Export"
-        ],
+        "tags": ["Export"],
         "parameters": [
           {
             "name": "download",
@@ -3676,10 +3482,7 @@
             "required": true,
             "schema": {
               "type": "object",
-              "required": [
-                "modelName",
-                "objectName"
-              ],
+              "required": ["modelName", "objectName"],
               "properties": {
                 "limit": {
                   "type": "integer",
@@ -3701,15 +3504,7 @@
                       "type": "array",
                       "description": "Type of invoices you want to export\n1. RE - Rechnung\n2. SR - Stornorechnung\n3. TR - Teilrechnung\n4. AR - Abschlagsrechnung\n5. ER - Endrechnung\n6. WKR - Wiederkehrende Rechnung\n7. MA - Mahnung ",
                       "items": {
-                        "enum": [
-                          "Re",
-                          "SR",
-                          "TR",
-                          "AR",
-                          "ER",
-                          "WKR",
-                          "MA"
-                        ]
+                        "enum": ["Re", "SR", "TR", "AR", "ER", "WKR", "MA"]
                       }
                     },
                     "startDate": {
@@ -3725,10 +3520,7 @@
                     "contact": {
                       "description": "filters the invoices by contact",
                       "type": "object",
-                      "required": [
-                        "id",
-                        "objectName"
-                      ],
+                      "required": ["id", "objectName"],
                       "properties": {
                         "id": {
                           "description": "ID of the contact",
@@ -3810,9 +3602,7 @@
         "summary": "Export Invoice as zip",
         "description": "Export all invoices as zip",
         "operationId": "exportInvoiceZip",
-        "tags": [
-          "Export"
-        ],
+        "tags": ["Export"],
         "parameters": [
           {
             "name": "download",
@@ -3827,10 +3617,7 @@
             "required": true,
             "schema": {
               "type": "object",
-              "required": [
-                "modelName",
-                "objectName"
-              ],
+              "required": ["modelName", "objectName"],
               "properties": {
                 "limit": {
                   "type": "integer",
@@ -3851,15 +3638,7 @@
                       "type": "array",
                       "description": "Type of invoices you want to export\n1. RE - Rechnung\n2. SR - Stornorechnung\n3. TR - Teilrechnung\n4. AR - Abschlagsrechnung\n5. ER - Endrechnung\n6. WKR - Wiederkehrende Rechnung\n7. MA - Mahnung ",
                       "items": {
-                        "enum": [
-                          "Re",
-                          "SR",
-                          "TR",
-                          "AR",
-                          "ER",
-                          "WKR",
-                          "MA"
-                        ]
+                        "enum": ["Re", "SR", "TR", "AR", "ER", "WKR", "MA"]
                       }
                     },
                     "startDate": {
@@ -3875,10 +3654,7 @@
                     "contact": {
                       "description": "filters the invoices by contact",
                       "type": "object",
-                      "required": [
-                        "id",
-                        "objectName"
-                      ],
+                      "required": ["id", "objectName"],
                       "properties": {
                         "id": {
                           "description": "ID of the contact",
@@ -3962,9 +3738,7 @@
         "summary": "Export creditNote",
         "description": "Export all credit notes as csv",
         "operationId": "exportCreditNote",
-        "tags": [
-          "Export"
-        ],
+        "tags": ["Export"],
         "parameters": [
           {
             "name": "download",
@@ -3979,10 +3753,7 @@
             "required": true,
             "schema": {
               "type": "object",
-              "required": [
-                "modelName",
-                "objectName"
-              ],
+              "required": ["modelName", "objectName"],
               "properties": {
                 "limit": {
                   "type": "integer",
@@ -4013,10 +3784,7 @@
                     "contact": {
                       "description": "filters the credit notes by contact",
                       "type": "object",
-                      "required": [
-                        "id",
-                        "objectName"
-                      ],
+                      "required": ["id", "objectName"],
                       "properties": {
                         "id": {
                           "description": "ID of the contact",
@@ -4098,9 +3866,7 @@
         "summary": "Export voucher as zip",
         "description": "Export all vouchers as zip",
         "operationId": "exportVoucher",
-        "tags": [
-          "Export"
-        ],
+        "tags": ["Export"],
         "parameters": [
           {
             "name": "download",
@@ -4115,10 +3881,7 @@
             "required": true,
             "schema": {
               "type": "object",
-              "required": [
-                "modelName",
-                "objectName"
-              ],
+              "required": ["modelName", "objectName"],
               "properties": {
                 "limit": {
                   "type": "integer",
@@ -4159,10 +3922,7 @@
                     "contact": {
                       "description": "filters the vouchers by contact",
                       "type": "object",
-                      "required": [
-                        "id",
-                        "objectName"
-                      ],
+                      "required": ["id", "objectName"],
                       "properties": {
                         "id": {
                           "description": "ID of the contact",
@@ -4240,9 +4000,7 @@
         "summary": "Export transaction",
         "description": "Export all transactions as csv",
         "operationId": "exportTransactions",
-        "tags": [
-          "Export"
-        ],
+        "tags": ["Export"],
         "parameters": [
           {
             "name": "download",
@@ -4257,10 +4015,7 @@
             "required": true,
             "schema": {
               "type": "object",
-              "required": [
-                "modelName",
-                "objectName"
-              ],
+              "required": ["modelName", "objectName"],
               "properties": {
                 "limit": {
                   "type": "integer",
@@ -4310,10 +4065,7 @@
                     },
                     "checkAccount": {
                       "type": "object",
-                      "required": [
-                        "id",
-                        "objectName"
-                      ],
+                      "required": ["id", "objectName"],
                       "properties": {
                         "id": {
                           "description": "Id of the checkAccount",
@@ -4386,9 +4138,7 @@
         "summary": "Export voucher zip",
         "description": "export all vouchers as zip",
         "operationId": "exportVoucherZip",
-        "tags": [
-          "Export"
-        ],
+        "tags": ["Export"],
         "parameters": [
           {
             "name": "download",
@@ -4403,10 +4153,7 @@
             "required": true,
             "schema": {
               "type": "object",
-              "required": [
-                "modelName",
-                "objectName"
-              ],
+              "required": ["modelName", "objectName"],
               "properties": {
                 "limit": {
                   "type": "integer",
@@ -4447,10 +4194,7 @@
                     "contact": {
                       "description": "filters the vouchers by contact",
                       "type": "object",
-                      "required": [
-                        "id",
-                        "objectName"
-                      ],
+                      "required": ["id", "objectName"],
                       "properties": {
                         "id": {
                           "description": "ID of the contact",
@@ -4534,9 +4278,7 @@
         "summary": "Export contact",
         "description": "Contact export as csv",
         "operationId": "exportContact",
-        "tags": [
-          "Export"
-        ],
+        "tags": ["Export"],
         "parameters": [
           {
             "name": "download",
@@ -4551,10 +4293,7 @@
             "required": true,
             "schema": {
               "type": "object",
-              "required": [
-                "modelName",
-                "objectName"
-              ],
+              "required": ["modelName", "objectName"],
               "properties": {
                 "limit": {
                   "type": "integer",
@@ -4584,10 +4323,7 @@
                     },
                     "country": {
                       "type": "object",
-                      "required": [
-                        "id",
-                        "objectName"
-                      ],
+                      "required": ["id", "objectName"],
                       "properties": {
                         "id": {
                           "description": "id of the country",
@@ -4665,9 +4401,7 @@
     },
     "/Part": {
       "get": {
-        "tags": [
-          "Part"
-        ],
+        "tags": ["Part"],
         "summary": "Retrieve parts",
         "description": "Retrieve all parts in your sevDesk inventory according to the applied filters.",
         "operationId": "getParts",
@@ -4725,9 +4459,7 @@
         "deprecated": false
       },
       "post": {
-        "tags": [
-          "Part"
-        ],
+        "tags": ["Part"],
         "summary": "Create a new part",
         "description": "Creates a part in your sevDesk inventory.",
         "operationId": "createPart",
@@ -4766,9 +4498,7 @@
     },
     "/Part/{partId}": {
       "get": {
-        "tags": [
-          "Part"
-        ],
+        "tags": ["Part"],
         "summary": "Find part by ID",
         "description": "Returns a single part",
         "operationId": "getPartById",
@@ -4814,9 +4544,7 @@
         }
       },
       "put": {
-        "tags": [
-          "Part"
-        ],
+        "tags": ["Part"],
         "summary": "Update an existing part",
         "description": "Update a part",
         "operationId": "updatePart",
@@ -4866,9 +4594,7 @@
     },
     "/Part/{partId}/getStock": {
       "get": {
-        "tags": [
-          "Part"
-        ],
+        "tags": ["Part"],
         "summary": "Get stock of a part",
         "description": "Returns the current stock amount of the given part.",
         "operationId": "partGetStock",
@@ -4915,9 +4641,7 @@
     },
     "/Invoice": {
       "get": {
-        "tags": [
-          "Invoice"
-        ],
+        "tags": ["Invoice"],
         "summary": "Retrieve invoices",
         "description": "There are a multitude of parameter which can be used to filter. A few of them are attached but\r\n     for a complete list please check out <a href='https://api.sevdesk.de/#section/How-to-filter-for-certain-invoices'>this</a> list",
         "operationId": "getInvoices",
@@ -4929,11 +4653,7 @@
             "required": false,
             "schema": {
               "type": "number",
-              "enum": [
-                100,
-                200,
-                1000
-              ]
+              "enum": [100, 200, 1000]
             }
           },
           {
@@ -5003,9 +4723,7 @@
     },
     "/Invoice/Factory/saveInvoice": {
       "post": {
-        "tags": [
-          "Invoice"
-        ],
+        "tags": ["Invoice"],
         "summary": "Create a new invoice",
         "description": "This endpoint offers you the following functionality.\r\n     <ul>\r\n        <li>Create invoices together with positions and discounts</li>\r\n        <li>Delete positions while adding new ones</li>\r\n        <li>Delete or add discounts, or both at the same time</li>\r\n        <li>Automatically fill the address of the supplied contact into the invoice address</li>\r\n     </ul>\r\n     To make your own request sample slimmer, you can omit all parameters which are not required and nullable.\r\n     However, for a valid and logical bookkeeping document, you will also need some of them to ensure that all the necessary data is in the invoice.<br><br> The list of parameters starts with the invoice array.<br> This array contains all required attributes for a complete invoice.<br> Most of the attributes are covered in the invoice attribute list, there are only two parameters standing out, namely <b>mapAll</b> and <b>objectName</b>.<br> These are just needed for our system and you always need to provide them.<br><br> The list of parameters then continues with the invoice position array.<br> With this array you have the possibility to add multiple positions at once.<br> In the example it only contains one position, again together with the parameters <b>mapAll</b> and <b>objectName</b>, however, you can add more invoice positions by extending the array.<br> So if you wanted to add another position, you would add the same list of parameters with an incremented array index of \"1\" instead of \"0\".<br><br> The list ends with the four parameters invoicePosDelete, discountSave, discountDelete and takeDefaultAddress.<br> They only play a minor role if you only want to create an invoice but we will shortly explain what they can do.<br> With invoicePosDelete you have to option to delete invoice positions as this request can also be used to update invoices.<br> With discountSave you can add discounts to your invoice.<br> With discountDelete you can delete discounts from your invoice.<br> With takeDefaultAddress you can specify that the first address of the contact you are using for the invoice is taken for the invoice address attribute automatically, so you don't need to provide the address yourself.<br> If you want to know more about these parameters, for example if you want to use this request to update invoices, feel free to contact our support.<br><br> Finally, after covering all parameters, they only important information left, is that the order of the last four attributes always needs to be kept.<br> You will also always need to provide all of them, as otherwise the request won't work properly.<br><br> <b>Warning:</b> You can not create a regular invoice with the <b>deliveryDate</b> being later than the <b>invoiceDate</b>.<br> To do that you will need to create a so called <b>Abschlagsrechnung</b> by setting the <b>invoiceType</b> parameter to <b>AR</b>.",
         "operationId": "createInvoiceByFactory",
@@ -5049,9 +4767,7 @@
     },
     "/Invoice/{invoiceId}": {
       "get": {
-        "tags": [
-          "Invoice"
-        ],
+        "tags": ["Invoice"],
         "summary": "Find invoice by ID",
         "description": "Returns a single invoice",
         "operationId": "getInvoiceById",
@@ -5104,9 +4820,7 @@
     },
     "/Invoice/{invoiceId}/getPositions": {
       "get": {
-        "tags": [
-          "Invoice"
-        ],
+        "tags": ["Invoice"],
         "summary": "Find invoice positions",
         "description": "Returns all positions of an invoice",
         "operationId": "getInvoicePositionsById",
@@ -5189,9 +4903,7 @@
     },
     "/Invoice/Factory/createInvoiceFromOrder": {
       "post": {
-        "tags": [
-          "Invoice"
-        ],
+        "tags": ["Invoice"],
         "summary": "Create invoice from order",
         "description": "Create an invoice from an order",
         "operationId": "createInvoiceFromOrder",
@@ -5235,9 +4947,7 @@
     },
     "/Invoice/Factory/createInvoiceReminder": {
       "post": {
-        "tags": [
-          "Invoice"
-        ],
+        "tags": ["Invoice"],
         "summary": "Create invoice reminder",
         "description": "Create an reminder from an invoice",
         "operationId": "createInvoiceReminder",
@@ -5246,16 +4956,11 @@
           "content": {
             "application/json": {
               "schema": {
-                "required": [
-                  "invoice"
-                ],
+                "required": ["invoice"],
                 "properties": {
                   "invoice": {
                     "description": "Invoice for the reminder",
-                    "required": [
-                      "id",
-                      "objectName"
-                    ],
+                    "required": ["id", "objectName"],
                     "properties": {
                       "id": {
                         "description": "Id of the invoice",
@@ -5304,9 +5009,7 @@
     },
     "/Invoice/{invoiceId}/getIsPartiallyPaid": {
       "get": {
-        "tags": [
-          "Invoice"
-        ],
+        "tags": ["Invoice"],
         "summary": "Check if an invoice is already partially paid",
         "description": "Returns 'true' if the given invoice is partially paid - 'false' if it is not.\r\n    Invoices which are completely paid are regarded as not partially paid.",
         "operationId": "getIsInvoicePartiallyPaid",
@@ -5356,9 +5059,7 @@
     },
     "/Invoice/{invoiceId}/cancelInvoice": {
       "post": {
-        "tags": [
-          "Invoice"
-        ],
+        "tags": ["Invoice"],
         "summary": "Cancel an invoice / Create cancellation invoice",
         "description": "This endpoint will cancel the specified invoice therefor creating a cancellation invoice.<br>\r\n     The cancellation invoice will be automatically paid and the source invoices status will change to 'cancelled'.",
         "operationId": "cancelInvoice",
@@ -5403,9 +5104,7 @@
     },
     "/Invoice/{invoiceId}/render": {
       "post": {
-        "tags": [
-          "Invoice"
-        ],
+        "tags": ["Invoice"],
         "summary": "Render the pdf document of an invoice",
         "description": "Using this endpoint you can render the pdf document of an invoice.<br>\r\n     Use cases for this are the retrieval of the pdf location or the forceful re-render of a already sent invoice.<br>\r\n     Please be aware that changing an invoice after it has been sent to a customer is not an allowed bookkeeping process.",
         "operationId": "invoiceRender",
@@ -5524,9 +5223,7 @@
     },
     "/Invoice/{invoiceId}/sendViaEmail": {
       "post": {
-        "tags": [
-          "Invoice"
-        ],
+        "tags": ["Invoice"],
         "summary": "Send invoice via email",
         "description": "This endpoint sends the specified invoice to a customer via email.<br>\r\n    This will automatically mark the invoice as sent.<br>\r\n    Please note, that in production an invoice is not allowed to be changed after this happened!",
         "operationId": "sendInvoiceViaEMail",
@@ -5546,42 +5243,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "required": [
-                  "toEmail",
-                  "subject",
-                  "text"
-                ],
-                "properties": {
-                  "toEmail": {
-                    "description": "The recipient of the email.",
-                    "type": "string"
-                  },
-                  "subject": {
-                    "description": "The subject of the email.",
-                    "type": "string"
-                  },
-                  "text": {
-                    "description": "The text of the email. Can contain html.",
-                    "type": "string"
-                  },
-                  "copy": {
-                    "description": "Should a copy of this email be sent to you?",
-                    "type": "boolean"
-                  },
-                  "additionalAttachments": {
-                    "description": "Additional attachments to the mail. String of IDs of existing documents in your\r\n     *                      sevdesk account separated by ','",
-                    "type": "string"
-                  },
-                  "ccEmail": {
-                    "description": "String of mail addresses to be put as cc separated by ','",
-                    "type": "string"
-                  },
-                  "bccEmail": {
-                    "description": "String of mail addresses to be put as bcc separated by ','",
-                    "type": "string"
-                  }
-                },
-                "type": "object"
+                "$ref": "#/components/schemas/sendInvoiceViaEMail"
               }
             }
           }
@@ -5616,9 +5278,7 @@
     },
     "/Invoice/{invoiceId}/getPdf": {
       "get": {
-        "tags": [
-          "Invoice"
-        ],
+        "tags": ["Invoice"],
         "summary": "Retrieve pdf document of an invoice",
         "description": "Retrieves the pdf document of an invoice with additional metadata.",
         "operationId": "invoiceGetPdf",
@@ -5699,9 +5359,7 @@
     },
     "/Invoice/{invoiceId}/sendBy": {
       "put": {
-        "tags": [
-          "Invoice"
-        ],
+        "tags": ["Invoice"],
         "summary": "Mark invoice as sent",
         "description": "Marks an invoice as sent by a chosen send type.",
         "operationId": "invoiceSendBy",
@@ -5721,20 +5379,12 @@
           "content": {
             "application/json": {
               "schema": {
-                "required": [
-                  "sendType",
-                  "sendDraft"
-                ],
+                "required": ["sendType", "sendDraft"],
                 "properties": {
                   "sendType": {
                     "description": "Specifies the way in which the invoice was sent to the customer.<br>\r\n     Accepts 'VPR' (print), 'VP' (postal), 'VM' (mail) and 'VPDF' (downloaded pfd).",
                     "type": "string",
-                    "enum": [
-                      "VPR",
-                      "VP",
-                      "VM",
-                      "VPDF"
-                    ]
+                    "enum": ["VPR", "VP", "VM", "VPDF"]
                   },
                   "sendDraft": {
                     "description": "Specify if the should be enshrined after marking it as sent.",
@@ -5776,9 +5426,7 @@
     },
     "/Invoice/{invoiceId}/bookAmount": {
       "put": {
-        "tags": [
-          "Invoice"
-        ],
+        "tags": ["Invoice"],
         "summary": "Book an invoice",
         "description": "Booking the invoice with a transaction is probably the most important part in the bookkeeping process.<br> There are several ways on correctly booking an invoice, all by using the same endpoint.<br> for more information look <a href='https://api.sevdesk.de/#section/How-to-book-an-invoice'>here</a>.",
         "operationId": "bookInvoice",
@@ -5798,12 +5446,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "required": [
-                  "amount",
-                  "date",
-                  "type",
-                  "checkAccount"
-                ],
+                "required": ["amount", "date", "type", "checkAccount"],
                 "properties": {
                   "amount": {
                     "description": "Amount which should be booked. Can also be a partial amount.",
@@ -5816,21 +5459,11 @@
                   "type": {
                     "description": "Define a type for the booking.<br>\r\n    The following type abbreviations are available (abbreviation <-> meaning).<br>\r\n    <ul>\r\n    <li>N <-> Normal booking / partial booking</li>\r\n    <li>CB <-> Reduced amount due to discount (skonto)</li>\r\n    <li>CF <-> Reduced/Higher amount due to currency fluctuations</li>\r\n    <li>O <-> Reduced/Higher amount due to other reasons</li>\r\n    <li>OF <-> Higher amount due to reminder charges</li>\r\n    <li>MTC <-> Reduced amount due to the monetary traffic costs</li>\r\n    </ul>",
                     "type": "string",
-                    "enum": [
-                      "N",
-                      "CB",
-                      "CF",
-                      "O",
-                      "OF",
-                      "MTC"
-                    ]
+                    "enum": ["N", "CB", "CF", "O", "OF", "MTC"]
                   },
                   "checkAccount": {
                     "description": "The check account on which should be booked.",
-                    "required": [
-                      "id",
-                      "objectName"
-                    ],
+                    "required": ["id", "objectName"],
                     "properties": {
                       "id": {
                         "description": "The id of the check account on which should be booked.",
@@ -5846,10 +5479,7 @@
                   },
                   "checkAccountTransaction": {
                     "description": "The check account transaction on which should be booked.<br>\r\n    The transaction will be linked to the invoice.",
-                    "required": [
-                      "id",
-                      "objectName"
-                    ],
+                    "required": ["id", "objectName"],
                     "properties": {
                       "id": {
                         "description": "The id of the check account transaction on which should be booked.",
@@ -5901,10 +5531,7 @@
                     },
                     "creditNote": {
                       "type": "object",
-                      "required": [
-                        "id",
-                        "objectName"
-                      ],
+                      "required": ["id", "objectName"],
                       "properties": {
                         "id": {
                           "description": "The id of the invoice",
@@ -5938,10 +5565,7 @@
                     "sevClient": {
                       "type": "object",
                       "description": "Client to which invoice belongs. Will be filled automatically",
-                      "required": [
-                        "id",
-                        "objectName"
-                      ],
+                      "required": ["id", "objectName"],
                       "properties": {
                         "id": {
                           "description": "Unique identifier of the client",
@@ -5979,9 +5603,7 @@
     },
     "/InvoicePos": {
       "get": {
-        "tags": [
-          "InvoicePos"
-        ],
+        "tags": ["InvoicePos"],
         "summary": "Retrieve InvoicePos",
         "description": "There are a multitude of parameter which can be used to filter.",
         "operationId": "getInvoicePos",
@@ -6035,9 +5657,7 @@
     },
     "/DocServer/getLetterpapersWithThumb": {
       "get": {
-        "tags": [
-          "Layout"
-        ],
+        "tags": ["Layout"],
         "summary": "Retrieve letterpapers",
         "description": "Retrieve all letterpapers with Thumb",
         "operationId": "getLetterpapersWithThumb",
@@ -6096,9 +5716,7 @@
     },
     "/DocServer/getTemplatesWithThumb": {
       "get": {
-        "tags": [
-          "Layout"
-        ],
+        "tags": ["Layout"],
         "summary": "Retrieve templates",
         "description": "Retrieve all templates",
         "operationId": "getTemplates",
@@ -6185,9 +5803,7 @@
     },
     "/Invoice/{invoiceId}/changeParameter": {
       "put": {
-        "tags": [
-          "Layout"
-        ],
+        "tags": ["Layout"],
         "summary": "Update an invoice template",
         "description": "Update an existing invoice template",
         "operationId": "updateInvoiceTemplate",
@@ -6237,9 +5853,7 @@
     },
     "/Order/{orderId}/changeParameter": {
       "put": {
-        "tags": [
-          "Layout"
-        ],
+        "tags": ["Layout"],
         "summary": "Update an order template",
         "description": "Update an existing order template",
         "operationId": "updateOrderTemplate",
@@ -6289,9 +5903,7 @@
     },
     "/CreditNote/{creditNoteId}/changeParameter": {
       "put": {
-        "tags": [
-          "Layout"
-        ],
+        "tags": ["Layout"],
         "summary": "Update an of credit note template",
         "description": "Update an existing of credit note template",
         "operationId": "updateCreditNoteTemplate",
@@ -6341,9 +5953,7 @@
     },
     "/Order": {
       "get": {
-        "tags": [
-          "Order"
-        ],
+        "tags": ["Order"],
         "summary": "Retrieve orders",
         "description": "There are a multitude of parameter which can be used to filter. A few of them are attached but\r\n    for a complete list please check out <a href='https://api.sevdesk.de/#section/How-to-filter-for-certain-orders'>this</a> list",
         "operationId": "getOrders",
@@ -6356,14 +5966,7 @@
             "explode": true,
             "schema": {
               "type": "integer",
-              "enum": [
-                100,
-                200,
-                300,
-                500,
-                750,
-                1000
-              ]
+              "enum": [100, 200, 300, 500, 750, 1000]
             }
           },
           {
@@ -6431,9 +6034,7 @@
     },
     "/Order/Factory/saveOrder": {
       "post": {
-        "tags": [
-          "Order"
-        ],
+        "tags": ["Order"],
         "summary": "Create a new order",
         "description": "Creates an order to which positions can be added later.",
         "operationId": "createOrder",
@@ -6472,9 +6073,7 @@
     },
     "/Order/{orderId}": {
       "get": {
-        "tags": [
-          "Order"
-        ],
+        "tags": ["Order"],
         "summary": "Find order by ID",
         "description": "Returns a single order",
         "operationId": "getOrderById",
@@ -6520,9 +6119,7 @@
         }
       },
       "put": {
-        "tags": [
-          "Order"
-        ],
+        "tags": ["Order"],
         "summary": "Update an existing order",
         "description": "Update an order",
         "operationId": "updateOrder",
@@ -6570,9 +6167,7 @@
         }
       },
       "delete": {
-        "tags": [
-          "Order"
-        ],
+        "tags": ["Order"],
         "summary": "Deletes an order",
         "operationId": "deleteOrder",
         "parameters": [
@@ -6622,9 +6217,7 @@
     },
     "/Order/{orderId}/getPositions": {
       "get": {
-        "tags": [
-          "Order"
-        ],
+        "tags": ["Order"],
         "summary": "Find order positions",
         "description": "Returns all positions of an order",
         "operationId": "getOrderPositionsById",
@@ -6702,9 +6295,7 @@
     },
     "/Order/{orderId}/getDiscounts": {
       "get": {
-        "tags": [
-          "Order"
-        ],
+        "tags": ["Order"],
         "summary": "Find order discounts",
         "description": "Returns all discounts of an order",
         "operationId": "getDiscounts",
@@ -6782,9 +6373,7 @@
     },
     "/Order/{orderId}/getRelatedObjects": {
       "get": {
-        "tags": [
-          "Order"
-        ],
+        "tags": ["Order"],
         "summary": "Find related objects",
         "description": "Get related objects of a specified order",
         "operationId": "getRelatedObjects",
@@ -6862,9 +6451,7 @@
     },
     "/Order/{orderId}/sendViaEmail": {
       "post": {
-        "tags": [
-          "Order"
-        ],
+        "tags": ["Order"],
         "summary": "Send order via email",
         "description": "This endpoint sends the specified order to a customer via email.<br>\r\n    This will automatically mark the order as sent.<br>\r\n    Please note, that in production an order is not allowed to be changed after this happened!",
         "operationId": "sendorderViaEMail",
@@ -6884,11 +6471,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "required": [
-                  "toEmail",
-                  "subject",
-                  "text"
-                ],
+                "required": ["toEmail", "subject", "text"],
                 "properties": {
                   "toEmail": {
                     "description": "The recipient of the email.",
@@ -6957,9 +6540,7 @@
     },
     "/Order/Factory/createPackingListFromOrder": {
       "post": {
-        "tags": [
-          "Order"
-        ],
+        "tags": ["Order"],
         "summary": "Create packing list from order",
         "description": "Create packing list from order",
         "operationId": "createPackingListFromOrder",
@@ -6998,9 +6579,7 @@
     },
     "/Order/Factory/createContractNoteFromOrder": {
       "post": {
-        "tags": [
-          "Order"
-        ],
+        "tags": ["Order"],
         "summary": "Create contract note from order",
         "description": "Create contract note from order",
         "operationId": "createContractNoteFromOrder",
@@ -7039,9 +6618,7 @@
     },
     "/Order/{orderId}/getPdf": {
       "get": {
-        "tags": [
-          "Order"
-        ],
+        "tags": ["Order"],
         "summary": "Retrieve pdf document of an order",
         "description": "Retrieves the pdf document of an order with additional metadata and commit the order.",
         "operationId": "orderGetPdf",
@@ -7117,9 +6694,7 @@
     },
     "/Order/{orderId}/sendBy": {
       "put": {
-        "tags": [
-          "Order"
-        ],
+        "tags": ["Order"],
         "summary": "Mark order as sent",
         "description": "Marks an order as sent by a chosen send type.",
         "operationId": "orderSendBy",
@@ -7139,20 +6714,12 @@
           "content": {
             "application/json": {
               "schema": {
-                "required": [
-                  "sendType",
-                  "sendDraft"
-                ],
+                "required": ["sendType", "sendDraft"],
                 "properties": {
                   "sendType": {
                     "description": "Specifies the way in which the order was sent to the customer.<br>\r\n     Accepts 'VPR' (print), 'VP' (postal), 'VM' (mail) and 'VPDF' (downloaded pfd).",
                     "type": "string",
-                    "enum": [
-                      "VPR",
-                      "VP",
-                      "VM",
-                      "VPDF"
-                    ]
+                    "enum": ["VPR", "VP", "VM", "VPDF"]
                   },
                   "sendDraft": {
                     "description": "Specify if the should be enshrined after marking it as sent.",
@@ -7189,9 +6756,7 @@
     },
     "/OrderPos/{orderPosId}": {
       "get": {
-        "tags": [
-          "OrderPos"
-        ],
+        "tags": ["OrderPos"],
         "summary": "Find order position by ID",
         "description": "Returns a single order position",
         "operationId": "getOrderPositionById",
@@ -7237,9 +6802,7 @@
         }
       },
       "put": {
-        "tags": [
-          "OrderPos"
-        ],
+        "tags": ["OrderPos"],
         "summary": "Update an existing order position",
         "description": "Update an order position",
         "operationId": "updateOrderPosition",
@@ -7287,9 +6850,7 @@
         }
       },
       "delete": {
-        "tags": [
-          "OrderPos"
-        ],
+        "tags": ["OrderPos"],
         "summary": "Deletes an order Position",
         "operationId": "deleteOrderPos",
         "parameters": [
@@ -7339,9 +6900,7 @@
     },
     "/Voucher/Factory/saveVoucher": {
       "post": {
-        "tags": [
-          "Voucher"
-        ],
+        "tags": ["Voucher"],
         "summary": "Create a new voucher",
         "description": "Bundles the creation or updating of voucher and voucher position.<br> The list of parameters starts with the voucher array.<br> This array contains all required attributes for a complete voucher.<br> Most of the attributes are covered in the voucher attribute list, there are only two parameters standing out, namely <b>mapAll</b> and <b>objectName</b>.<br> These are just needed for our system and you always need to provide them.<br><br> The list of parameters then continues with the voucher position array.<br> With this array you have the possibility to add multiple positions at once.<br> In the example it only contains one position, again together with the parameters <b>mapAll</b> and <b>objectName</b>, however, you can add more voucher positions by extending the array.<br> So if you wanted to add another position, you would add the same list of parameters with an incremented array index of \\\"1\\\" instead of \\\"0\\\".<br><br> The list ends with the two parameters voucherPosDelete and filename.<br> We will shortly explain what they can do.<br> With voucherPosDelete you have to option to delete voucher positions as this request can also be used to update vouchers.<br> With filename you can attach a file to the voucher.<br> For most of our customers this is a really important step, as they need to digitize their receipts.<br> Finally, after covering all parameters, they only important information left, is that the order of the last two attributes always needs to be kept.",
         "operationId": "createVoucherByFactory",
@@ -7390,9 +6949,7 @@
     },
     "/Voucher/Factory/uploadTempFile": {
       "post": {
-        "tags": [
-          "Voucher"
-        ],
+        "tags": ["Voucher"],
         "summary": "Upload voucher file",
         "description": "To attach a document to a voucher, you will need to upload it first for later use.<br> To do this, you can use this request.<br> When you successfully uploaded the file, you will get a sevDesk internal filename in the response.<br> The filename will be a hash generated from your uploaded file. You will need it in the next request!<br> After you got the just mentioned filename, you can enter it as a value for the filename parameter of the saveVoucher request.<br> If you provided all necessary parameters and kept all of them in the right order, the file will be attached to your voucher.",
         "operationId": "voucherUploadFile",
@@ -7472,9 +7029,7 @@
     },
     "/Voucher": {
       "get": {
-        "tags": [
-          "Voucher"
-        ],
+        "tags": ["Voucher"],
         "summary": "Retrieve vouchers",
         "description": "There are a multitude of parameter which can be used to filter. A few of them are attached but\r\n    for a complete list please check out <a href='https://api.sevdesk.de/#section/How-to-filter-for-certain-vouchers'>this</a> list",
         "operationId": "getVouchers",
@@ -7487,11 +7042,7 @@
             "explode": true,
             "schema": {
               "type": "number",
-              "enum": [
-                50,
-                100,
-                1000
-              ]
+              "enum": [50, 100, 1000]
             }
           },
           {
@@ -7502,10 +7053,7 @@
             "explode": true,
             "schema": {
               "type": "string",
-              "enum": [
-                "C",
-                "D"
-              ]
+              "enum": ["C", "D"]
             }
           },
           {
@@ -7575,9 +7123,7 @@
     },
     "/Voucher/{voucherId}": {
       "get": {
-        "tags": [
-          "Voucher"
-        ],
+        "tags": ["Voucher"],
         "summary": "Find voucher by ID",
         "description": "Returns a single voucher",
         "operationId": "getVoucherById",
@@ -7623,9 +7169,7 @@
         }
       },
       "put": {
-        "tags": [
-          "Voucher"
-        ],
+        "tags": ["Voucher"],
         "summary": "Update an existing voucher",
         "description": "Update a voucher",
         "operationId": "updateVoucher",
@@ -7675,9 +7219,7 @@
     },
     "/Voucher/{voucherId}/bookAmount": {
       "put": {
-        "tags": [
-          "Voucher"
-        ],
+        "tags": ["Voucher"],
         "summary": "Book a voucher",
         "description": "Booking the voucher with a transaction is probably the most important part in the bookkeeping process.<br> There are several ways on correctly booking a voucher, all by using the same endpoint.<br> Conveniently, the booking process is exactly the same as the process for invoices.<br> For this reason, you can have a look at it <a href='https://api.sevdesk.de/#section/How-to-book-an-invoice'>here</a> and all you need to to is to change \"Invoice\" into \"Voucher\" in the URL.",
         "operationId": "bookVoucher",
@@ -7697,12 +7239,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "required": [
-                  "amount",
-                  "date",
-                  "type",
-                  "checkAccount"
-                ],
+                "required": ["amount", "date", "type", "checkAccount"],
                 "properties": {
                   "amount": {
                     "description": "Amount which should be booked. Can also be a partial amount.",
@@ -7717,21 +7254,11 @@
                   "type": {
                     "description": "Define a type for the booking.<br>\r\n    The following type abbreviations are available (abbreviation <-> meaning).<br>\r\n    <ul>\r\n    <li>N <-> Normal booking / partial booking</li>\r\n    <li>CB <-> Reduced amount due to discount (skonto)</li>\r\n    <li>CF <-> Reduced/Higher amount due to currency fluctuations</li>\r\n    <li>O <-> Reduced/Higher amount due to other reasons</li>\r\n    <li>OF <-> Higher amount due to reminder charges</li>\r\n    <li>MTC <-> Reduced amount due to the monetary traffic costs</li>\r\n    </ul>",
                     "type": "string",
-                    "enum": [
-                      "N",
-                      "CB",
-                      "CF",
-                      "O",
-                      "OF",
-                      "MTC"
-                    ]
+                    "enum": ["N", "CB", "CF", "O", "OF", "MTC"]
                   },
                   "checkAccount": {
                     "description": "The check account on which should be booked.",
-                    "required": [
-                      "id",
-                      "objectName"
-                    ],
+                    "required": ["id", "objectName"],
                     "properties": {
                       "id": {
                         "description": "The id of the check account on which should be booked.",
@@ -7747,10 +7274,7 @@
                   },
                   "checkAccountTransaction": {
                     "description": "The check account transaction on which should be booked.<br>\r\n    The transaction will be linked to the voucher.",
-                    "required": [
-                      "id",
-                      "objectName"
-                    ],
+                    "required": ["id", "objectName"],
                     "properties": {
                       "id": {
                         "description": "The id of the check account transaction on which should be booked.",
@@ -7802,10 +7326,7 @@
                     },
                     "creditNote": {
                       "type": "object",
-                      "required": [
-                        "id",
-                        "objectName"
-                      ],
+                      "required": ["id", "objectName"],
                       "properties": {
                         "id": {
                           "description": "The id of the voucher",
@@ -7839,10 +7360,7 @@
                     "sevClient": {
                       "type": "object",
                       "description": "Client to which invoice belongs. Will be filled automatically",
-                      "required": [
-                        "id",
-                        "objectName"
-                      ],
+                      "required": ["id", "objectName"],
                       "properties": {
                         "id": {
                           "description": "Unique identifier of the client",
@@ -7878,9 +7396,7 @@
         "summary": "Export invoice list",
         "description": "Export invoice list",
         "operationId": "reportInvoice",
-        "tags": [
-          "Report"
-        ],
+        "tags": ["Report"],
         "parameters": [
           {
             "name": "download",
@@ -7904,10 +7420,7 @@
             "required": true,
             "schema": {
               "type": "object",
-              "required": [
-                "modelName",
-                "objectName"
-              ],
+              "required": ["modelName", "objectName"],
               "properties": {
                 "limit": {
                   "type": "integer",
@@ -7929,15 +7442,7 @@
                       "type": "array",
                       "description": "Type of invoices you want to export\n1. RE - Rechnung\n2. SR - Stornorechnung\n3. TR - Teilrechnung\n4. AR - Abschlagsrechnung\n5. ER - Endrechnung\n6. WKR - Wiederkehrende Rechnung\n7. MA - Mahnung ",
                       "items": {
-                        "enum": [
-                          "Re",
-                          "SR",
-                          "TR",
-                          "AR",
-                          "ER",
-                          "WKR",
-                          "MA"
-                        ]
+                        "enum": ["Re", "SR", "TR", "AR", "ER", "WKR", "MA"]
                       }
                     },
                     "startDate": {
@@ -7953,10 +7458,7 @@
                     "contact": {
                       "description": "filters the invoices by contact",
                       "type": "object",
-                      "required": [
-                        "id",
-                        "objectName"
-                      ],
+                      "required": ["id", "objectName"],
                       "properties": {
                         "id": {
                           "description": "ID of the contact",
@@ -8038,9 +7540,7 @@
         "summary": "Export order list",
         "description": "Export order list",
         "operationId": "reportOrder",
-        "tags": [
-          "Report"
-        ],
+        "tags": ["Report"],
         "parameters": [
           {
             "name": "download",
@@ -8064,10 +7564,7 @@
             "required": true,
             "schema": {
               "type": "object",
-              "required": [
-                "modelName",
-                "objectName"
-              ],
+              "required": ["modelName", "objectName"],
               "properties": {
                 "limit": {
                   "type": "integer",
@@ -8088,11 +7585,7 @@
                     "orderType": {
                       "type": "string",
                       "description": "Type of orders you want to export\n1. AN - Angebote\n2. AB - Aufträge\n3. LI - Lieferscheine",
-                      "enum": [
-                        "AN",
-                        "AB",
-                        "LI"
-                      ]
+                      "enum": ["AN", "AB", "LI"]
                     },
                     "startDate": {
                       "description": "Start date of the order",
@@ -8107,10 +7600,7 @@
                     "contact": {
                       "description": "filters the orders by contact",
                       "type": "object",
-                      "required": [
-                        "id",
-                        "objectName"
-                      ],
+                      "required": ["id", "objectName"],
                       "properties": {
                         "id": {
                           "description": "ID of the contact",
@@ -8192,9 +7682,7 @@
         "summary": "Export contact list",
         "description": "Export contact list",
         "operationId": "reportContact",
-        "tags": [
-          "Report"
-        ],
+        "tags": ["Report"],
         "parameters": [
           {
             "name": "download",
@@ -8209,10 +7697,7 @@
             "required": true,
             "schema": {
               "type": "object",
-              "required": [
-                "modelName",
-                "objectName"
-              ],
+              "required": ["modelName", "objectName"],
               "properties": {
                 "limit": {
                   "type": "integer",
@@ -8242,10 +7727,7 @@
                     },
                     "country": {
                       "type": "object",
-                      "required": [
-                        "id",
-                        "objectName"
-                      ],
+                      "required": ["id", "objectName"],
                       "properties": {
                         "id": {
                           "description": "id of the country",
@@ -8326,9 +7808,7 @@
         "summary": "Export voucher list",
         "description": "Export voucher list",
         "operationId": "reportVoucher",
-        "tags": [
-          "Report"
-        ],
+        "tags": ["Report"],
         "parameters": [
           {
             "name": "download",
@@ -8343,10 +7823,7 @@
             "required": true,
             "schema": {
               "type": "object",
-              "required": [
-                "modelName",
-                "objectName"
-              ],
+              "required": ["modelName", "objectName"],
               "properties": {
                 "limit": {
                   "type": "integer",
@@ -8387,10 +7864,7 @@
                     "contact": {
                       "description": "filters the vouchers by contact",
                       "type": "object",
-                      "required": [
-                        "id",
-                        "objectName"
-                      ],
+                      "required": ["id", "objectName"],
                       "properties": {
                         "id": {
                           "description": "ID of the contact",
@@ -8469,9 +7943,7 @@
     },
     "/Tag": {
       "get": {
-        "tags": [
-          "Tag"
-        ],
+        "tags": ["Tag"],
         "summary": "Retrieve tags",
         "description": "Retrieve all tags",
         "operationId": "getTags",
@@ -8524,9 +7996,7 @@
     },
     "/Tag/{tagId}": {
       "get": {
-        "tags": [
-          "Tag"
-        ],
+        "tags": ["Tag"],
         "summary": "Find tag by ID",
         "description": "Returns a single tag",
         "operationId": "getTagById",
@@ -8568,9 +8038,7 @@
         }
       },
       "put": {
-        "tags": [
-          "Tag"
-        ],
+        "tags": ["Tag"],
         "summary": "Update tag",
         "description": "Update an existing tag",
         "operationId": "updateTag",
@@ -8619,9 +8087,7 @@
         }
       },
       "delete": {
-        "tags": [
-          "Tag"
-        ],
+        "tags": ["Tag"],
         "summary": "Deletes a tag",
         "operationId": "deleteTag",
         "parameters": [
@@ -8671,9 +8137,7 @@
     },
     "/Tag/Factory/create": {
       "post": {
-        "tags": [
-          "Tag"
-        ],
+        "tags": ["Tag"],
         "summary": "Create a new tag",
         "description": "Create a new tag",
         "operationId": "createTag",
@@ -8681,19 +8145,14 @@
           "content": {
             "application/json": {
               "schema": {
-                "required": [
-                  "object"
-                ],
+                "required": ["object"],
                 "properties": {
                   "name": {
                     "description": "Name of the tag",
                     "type": "string"
                   },
                   "object": {
-                    "required": [
-                      "id",
-                      "objectName"
-                    ],
+                    "required": ["id", "objectName"],
                     "properties": {
                       "id": {
                         "description": "Id of the invoice/order/voucher/creditNote",
@@ -8704,12 +8163,7 @@
                         "description": "Model name",
                         "type": "string",
                         "example": "Invoice",
-                        "enum": [
-                          "Invoice",
-                          "Voucher",
-                          "Order",
-                          "CreditNote"
-                        ]
+                        "enum": ["Invoice", "Voucher", "Order", "CreditNote"]
                       }
                     },
                     "type": "object"
@@ -8741,9 +8195,7 @@
     },
     "/TagRelation": {
       "get": {
-        "tags": [
-          "Tag"
-        ],
+        "tags": ["Tag"],
         "summary": "Retrieve tag relations",
         "description": "Retrieve all tag relations",
         "operationId": "getTagRelations",
@@ -8807,10 +8259,7 @@
           },
           "sevClient": {
             "description": "Client to which check account belongs. Will be filled automatically",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the client",
@@ -8834,20 +8283,13 @@
           "type": {
             "description": "The type of the check account. Account with a CSV or MT940 import are regarded as online.<br>\r\n     Apart from that, created check accounts over the API need to be offline, as online accounts with an active connection\r\n     to a bank application can not be managed over the API.",
             "type": "string",
-            "enum": [
-              "online",
-              "offline"
-            ],
+            "enum": ["online", "offline"],
             "example": "online"
           },
           "importType": {
             "description": "Import type. Transactions can be imported by this method on the check account.",
             "type": "string",
-            "enum": [
-              "CSV",
-              "MT940",
-              null
-            ],
+            "enum": ["CSV", "MT940", null],
             "example": "CSV",
             "nullable": true
           },
@@ -8865,10 +8307,7 @@
             "description": "Status of the check account. 0 <-> Archived - 100 <-> Active",
             "type": "string",
             "default": "100",
-            "enum": [
-              "0",
-              "100"
-            ]
+            "enum": ["0", "100"]
           },
           "bankServer": {
             "description": "Bank server of check account",
@@ -8887,12 +8326,7 @@
       "Model_CheckAccount": {
         "title": "CheckAccount model",
         "description": "CheckAccount model. Responsible for the payment accounts.",
-        "required": [
-          "name",
-          "type",
-          "currency",
-          "status"
-        ],
+        "required": ["name", "type", "currency", "status"],
         "properties": {
           "id": {
             "description": "The check account id",
@@ -8920,10 +8354,7 @@
           },
           "sevClient": {
             "description": "Client to which check account belongs. Will be filled automatically",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the client",
@@ -8946,21 +8377,14 @@
           "type": {
             "description": "The type of the check account. Account with a CSV or MT940 import are regarded as online.<br>\r\n     Apart from that, created check accounts over the API need to be offline, as online accounts with an active connection\r\n     to a bank application can not be managed over the API.",
             "type": "string",
-            "enum": [
-              "online",
-              "offline"
-            ],
+            "enum": ["online", "offline"],
             "example": "online",
             "nullable": false
           },
           "importType": {
             "description": "Import type. Transactions can be imported by this method on the check account.",
             "type": "string",
-            "enum": [
-              "CSV",
-              "MT940",
-              null
-            ],
+            "enum": ["CSV", "MT940", null],
             "example": "CSV",
             "nullable": true
           },
@@ -8974,19 +8398,13 @@
             "description": "Defines if this check account is the default account.",
             "type": "integer",
             "default": 0,
-            "enum": [
-              0,
-              1
-            ]
+            "enum": [0, 1]
           },
           "status": {
             "description": "Status of the check account. 0 <-> Archived - 100 <-> Active",
             "type": "integer",
             "default": 100,
-            "enum": [
-              0,
-              100
-            ],
+            "enum": [0, 100],
             "nullable": false
           },
           "bankServer": {
@@ -9015,20 +8433,13 @@
           "type": {
             "description": "The type of the check account. Account with a CSV or MT940 import are regarded as online.<br>\r\n     Apart from that, created check accounts over the API need to be offline, as online accounts with an active connection\r\n     to a bank application can not be managed over the API.",
             "type": "string",
-            "enum": [
-              "online",
-              "offline"
-            ],
+            "enum": ["online", "offline"],
             "example": "online"
           },
           "importType": {
             "description": "Import type. Transactions can be imported by this method on the check account.",
             "type": "string",
-            "enum": [
-              "CSV",
-              "MT940",
-              null
-            ],
+            "enum": ["CSV", "MT940", null],
             "example": "CSV",
             "nullable": true
           },
@@ -9041,19 +8452,13 @@
             "description": "Defines if this check account is the default account.",
             "type": "integer",
             "default": 0,
-            "enum": [
-              0,
-              1
-            ]
+            "enum": [0, 1]
           },
           "status": {
             "description": "Status of the check account. 0 <-> Archived - 100 <-> Active",
             "type": "integer",
             "default": 100,
-            "enum": [
-              0,
-              100
-            ]
+            "enum": [0, 100]
           },
           "autoMapTransactions": {
             "description": "Defines if transactions on this account are automatically mapped to invoice and vouchers when imported if possible.",
@@ -9094,10 +8499,7 @@
           },
           "sevClient": {
             "description": "Client to which check account transaction belongs. Will be filled automatically",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the client",
@@ -9147,10 +8549,7 @@
           },
           "checkAccount": {
             "description": "The check account to which the transaction belongs",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the check account",
@@ -9170,12 +8569,7 @@
             "description": "Status of the check account transaction.<br>\r\n     100 <-> Created<br>\r\n     200 <-> Linked<br>\r\n     300 <-> Private<br>\r\n     400 <-> Booked",
             "type": "string",
             "readOnly": true,
-            "enum": [
-              "100",
-              "200",
-              "300",
-              "400"
-            ]
+            "enum": ["100", "200", "300", "400"]
           },
           "enshrined": {
             "description": "Defines if the transaction has been enshrined and can not be changed any more.",
@@ -9185,10 +8579,7 @@
           },
           "sourceTransaction": {
             "description": "The check account transaction serving as the source of the rebooking",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the check account transaction",
@@ -9206,10 +8597,7 @@
           },
           "targetTransaction": {
             "description": "The check account transaction serving as the target of the rebooking",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the check account transaction",
@@ -9264,10 +8652,7 @@
           },
           "sevClient": {
             "description": "Client to which check account transaction belongs. Will be filled automatically",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the client",
@@ -9315,10 +8700,7 @@
           },
           "checkAccount": {
             "description": "The check account to which the transaction belongs",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the check account",
@@ -9337,12 +8719,7 @@
             "description": "Status of the check account transaction.<br>\r\n     100 <-> Created<br>\r\n     200 <-> Linked<br>\r\n     300 <-> Private<br>\r\n     400 <-> Booked",
             "type": "integer",
             "nullable": false,
-            "enum": [
-              100,
-              200,
-              300,
-              400
-            ]
+            "enum": [100, 200, 300, 400]
           },
           "enshrined": {
             "description": "Defines if the transaction has been enshrined and can not be changed any more.",
@@ -9352,10 +8729,7 @@
           },
           "sourceTransaction": {
             "description": "The check account transaction serving as the source of the rebooking",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the check account transaction",
@@ -9372,10 +8746,7 @@
           },
           "targetTransaction": {
             "description": "The check account transaction serving as the target of the rebooking",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the check account transaction",
@@ -9428,10 +8799,7 @@
           },
           "checkAccount": {
             "description": "The check account to which the transaction belongs",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the check account",
@@ -9448,12 +8816,7 @@
           "status": {
             "description": "Status of the check account transaction.<br>\r\n     100 <-> Created<br>\r\n     200 <-> Linked<br>\r\n     300 <-> Private<br>\r\n     400 <-> Booked",
             "type": "integer",
-            "enum": [
-              100,
-              200,
-              300,
-              400
-            ]
+            "enum": [100, 200, 300, 400]
           },
           "enshrined": {
             "description": "Defines if the transaction has been enshrined and can not be changed any more.",
@@ -9463,10 +8826,7 @@
           },
           "sourceTransaction": {
             "description": "The check account transaction serving as the source of the rebooking",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the check account transaction",
@@ -9483,10 +8843,7 @@
           },
           "targetTransaction": {
             "description": "The check account transaction serving as the target of the rebooking",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the check account transaction",
@@ -9552,10 +8909,7 @@
           },
           "parent": {
             "description": "The parent contact to which this contact belongs. Must be an organization.",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the parent contact",
@@ -9591,10 +8945,7 @@
           },
           "category": {
             "description": "Category of the contact.<br> For more information,\r\n     see <a href='https://my.sevdesk.de/apiOverview/index.html#/doc-contacts#types'>here</a>.",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the category",
@@ -9628,10 +8979,7 @@
           },
           "sevClient": {
             "description": "Client to which contact belongs. Will be filled automatically",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the client",
@@ -9713,21 +9061,12 @@
           "taxType": {
             "description": "Defines which tax regulation the contact is using.",
             "type": "string",
-            "enum": [
-              "default",
-              "eu",
-              "noteu",
-              "custom",
-              "ss"
-            ],
+            "enum": ["default", "eu", "noteu", "custom", "ss"],
             "readOnly": true
           },
           "taxSet": {
             "description": "Tax set which is used in every invoice of the contact.",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the tax set",
@@ -9781,9 +9120,7 @@
       "Model_Contact": {
         "title": "Contact model",
         "description": "Contact model",
-        "required": [
-          "category"
-        ],
+        "required": ["category"],
         "properties": {
           "name": {
             "description": "The organization name.<br>\nBe aware that the type of contact will depend on this attribute.<br>\nIf it holds a value, the contact will be regarded as an organization.",
@@ -9804,10 +9141,7 @@
           },
           "parent": {
             "description": "The parent contact to which this contact belongs. Must be an organization.",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the parent contact",
@@ -9842,10 +9176,7 @@
           },
           "category": {
             "description": "Category of the contact.<br> For more information,\r\n     see <a href='https://my.sevdesk.de/apiOverview/index.html#/doc-contacts#types'>here</a>.",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the category",
@@ -9938,21 +9269,12 @@
           "taxType": {
             "description": "Defines which tax regulation the contact is using.",
             "type": "string",
-            "enum": [
-              "default",
-              "eu",
-              "noteu",
-              "custom",
-              "ss"
-            ],
+            "enum": ["default", "eu", "noteu", "custom", "ss"],
             "nullable": true
           },
           "taxSet": {
             "description": "Tax set which is used in every invoice of the contact.",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the tax set",
@@ -10013,10 +9335,7 @@
           },
           "parent": {
             "description": "The parent contact to which this contact belongs. Must be an organization.",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the parent contact",
@@ -10050,10 +9369,7 @@
           },
           "category": {
             "description": "Category of the contact.<br> For more information,\r\n     see <a href='https://my.sevdesk.de/apiOverview/index.html#/doc-contacts#types'>here</a>.",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the category",
@@ -10146,21 +9462,12 @@
           "taxType": {
             "description": "Defines which tax regulation the contact is using.",
             "type": "string",
-            "enum": [
-              "default",
-              "eu",
-              "noteu",
-              "custom",
-              "ss"
-            ],
+            "enum": ["default", "eu", "noteu", "custom", "ss"],
             "nullable": true
           },
           "taxSet": {
             "description": "Tax set which is used in every invoice of the contact.",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the tax set",
@@ -10201,10 +9508,7 @@
       "Model_ContactAddressResponse": {
         "title": "Contact address",
         "description": "ContactAddress model",
-        "required": [
-          "contact",
-          "country"
-        ],
+        "required": ["contact", "country"],
         "properties": {
           "id": {
             "description": "The contact address id",
@@ -10233,10 +9537,7 @@
           },
           "contact": {
             "description": "The contact to which this contact address belongs.",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the contact",
@@ -10271,10 +9572,7 @@
           },
           "country": {
             "description": "Country of the contact address.<br>\r\n    For all countries, send a GET to /StaticCountry",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the country",
@@ -10291,10 +9589,7 @@
           },
           "category": {
             "description": "Category of the contact address.<br>\r\n     For all categories, send a GET to /Category?objectType=ContactAddress.",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the category",
@@ -10316,10 +9611,7 @@
           },
           "sevClient": {
             "description": "Client to which contact address belongs. Will be filled automatically",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the client",
@@ -10354,10 +9646,7 @@
       "Model_ContactAddress": {
         "title": "Contact address",
         "description": "ContactAddress model",
-        "required": [
-          "contact",
-          "country"
-        ],
+        "required": ["contact", "country"],
         "properties": {
           "id": {
             "description": "The contact address id",
@@ -10385,10 +9674,7 @@
           },
           "contact": {
             "description": "The contact to which this contact address belongs.",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the contact",
@@ -10423,10 +9709,7 @@
           },
           "country": {
             "description": "Country of the contact address.<br>\r\n    For all countries, send a GET to /StaticCountry",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the country",
@@ -10443,10 +9726,7 @@
           },
           "category": {
             "description": "Category of the contact address.<br>\r\n     For all categories, send a GET to /Category?objectType=ContactAddress.",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the category",
@@ -10468,10 +9748,7 @@
           },
           "sevClient": {
             "description": "Client to which contact address belongs. Will be filled automatically",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the client",
@@ -10509,10 +9786,7 @@
         "properties": {
           "contact": {
             "description": "The contact to which this contact address belongs.",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the contact",
@@ -10547,10 +9821,7 @@
           },
           "country": {
             "description": "Country of the contact address.<br>\r\n    For all countries, send a GET to /StaticCountry",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the country",
@@ -10567,10 +9838,7 @@
           },
           "category": {
             "description": "Category of the contact address.<br>\r\n     For all categories, send a GET to /Category?objectType=ContactAddress.",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the category",
@@ -10638,10 +9906,7 @@
           },
           "contact": {
             "description": "The contact to which this communication way belongs.",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the contact",
@@ -10660,12 +9925,7 @@
           "type": {
             "description": "Type of the communication way",
             "type": "string",
-            "enum": [
-              "EMAIL",
-              "PHONE",
-              "WEB",
-              "MOBILE"
-            ],
+            "enum": ["EMAIL", "PHONE", "WEB", "MOBILE"],
             "example": "EMAIL",
             "readOnly": true
           },
@@ -10676,10 +9936,7 @@
           },
           "key": {
             "description": "The key of the communication way.<br>\nSimilar to the category of addresses.<br>\nFor all communication way keys please send a GET to /CommunicationWayKey.",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the key",
@@ -10703,10 +9960,7 @@
           },
           "sevClient": {
             "description": "Client to which communication way key belongs. Will be filled automatically",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the client",
@@ -10728,11 +9982,7 @@
       "Model_CommunicationWay": {
         "title": "CommunicationWay model",
         "description": "Contact communication way model",
-        "required": [
-          "type",
-          "value",
-          "key"
-        ],
+        "required": ["type", "value", "key"],
         "properties": {
           "id": {
             "description": "The communication way id",
@@ -10760,10 +10010,7 @@
           },
           "contact": {
             "description": "The contact to which this communication way belongs.",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the contact",
@@ -10781,12 +10028,7 @@
           "type": {
             "description": "Type of the communication way",
             "type": "string",
-            "enum": [
-              "EMAIL",
-              "PHONE",
-              "WEB",
-              "MOBILE"
-            ],
+            "enum": ["EMAIL", "PHONE", "WEB", "MOBILE"],
             "example": "EMAIL"
           },
           "value": {
@@ -10795,10 +10037,7 @@
           },
           "key": {
             "description": "The key of the communication way.<br>\nSimilar to the category of addresses.<br>\nFor all communication way keys please send a GET to /CommunicationWayKey.",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the key",
@@ -10821,10 +10060,7 @@
           },
           "sevClient": {
             "description": "Client to which communication way key belongs. Will be filled automatically",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the client",
@@ -10847,10 +10083,7 @@
         "properties": {
           "contact": {
             "description": "The contact to which this communication way belongs.",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the contact",
@@ -10868,12 +10101,7 @@
           "type": {
             "description": "Type of the communication way",
             "type": "string",
-            "enum": [
-              "EMAIL",
-              "PHONE",
-              "WEB",
-              "MOBILE"
-            ],
+            "enum": ["EMAIL", "PHONE", "WEB", "MOBILE"],
             "example": "EMAIL"
           },
           "value": {
@@ -10882,10 +10110,7 @@
           },
           "key": {
             "description": "The key of the communication way.<br>\nSimilar to the category of addresses.<br>\nFor all communication way keys please send a GET to /CommunicationWayKey.",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the key",
@@ -10939,10 +10164,7 @@
           },
           "contact": {
             "description": "The contact to which this accounting contact belongs.",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the contact",
@@ -10960,10 +10182,7 @@
           },
           "sevClient": {
             "description": "Client to which accounting contact belongs. Will be filled automatically",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the client",
@@ -10997,16 +10216,11 @@
       "Model_AccountingContact": {
         "title": "AccountingContact model",
         "description": "Accounting contact model",
-        "required": [
-          "contact"
-        ],
+        "required": ["contact"],
         "properties": {
           "contact": {
             "description": "The contact to which this accounting contact belongs.",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the contact",
@@ -11040,10 +10254,7 @@
         "properties": {
           "contact": {
             "description": "The contact to which this accounting contact belongs.",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the contact",
@@ -11126,10 +10337,7 @@
           },
           "sevClient": {
             "description": "Client to which invoice belongs. Will be filled automatically",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the client",
@@ -11188,10 +10396,7 @@
           },
           "sevClient": {
             "description": "Client to which contact field belongs. Will be filled automatically",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the client",
@@ -11209,10 +10414,7 @@
           "contact": {
             "description": "name of the contact",
             "type": "object",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of contact",
@@ -11254,10 +10456,7 @@
           "contact": {
             "description": "name of the contact",
             "type": "object",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of contact",
@@ -11273,10 +10472,7 @@
           "contactCustomFieldSetting": {
             "description": "name of the contact custom field setting",
             "type": "object",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of contact custom field setting",
@@ -11307,10 +10503,7 @@
           "contact": {
             "description": "name of the contact",
             "type": "object",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of contact",
@@ -11326,10 +10519,7 @@
           "contactCustomFieldSetting": {
             "description": "name of the contact custom field setting",
             "type": "object",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of contact custom field setting",
@@ -11356,9 +10546,7 @@
       "Model_ContactCustomFieldSetting": {
         "title": "contact field settings model",
         "description": "contact field settings model",
-        "required": [
-          "name"
-        ],
+        "required": ["name"],
         "properties": {
           "name": {
             "description": "name of the contact fields",
@@ -11435,10 +10623,7 @@
           },
           "contact": {
             "description": "The contact used in the creditNote",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the contact",
@@ -11464,11 +10649,7 @@
           "status": {
             "description": "Please have a look in \r\n    <a href='https://api.sevdesk.de/#section/Types-and-status-of-credit-notes'>status of credit note</a>\r\n    to see what the different status codes mean",
             "type": "string",
-            "enum": [
-              "100",
-              "200",
-              "1000"
-            ],
+            "enum": ["100", "200", "1000"],
             "example": "100",
             "nullable": false
           },
@@ -11490,10 +10671,7 @@
           },
           "addressCountry": {
             "description": "Can be omitted as complete address is defined in address attribute",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the country",
@@ -11511,10 +10689,7 @@
           },
           "createUser": {
             "description": "Will be filled automatically by our system and can't be changed",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the user",
@@ -11532,10 +10707,7 @@
           },
           "sevClient": {
             "description": "Client to which creditNote belongs. Will be filled automatically",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the client",
@@ -11582,10 +10754,7 @@
           },
           "contactPerson": {
             "description": "The user who acts as a contact person for the creditNote",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the user",
@@ -11609,10 +10778,7 @@
           },
           "taxSet": {
             "description": "Tax set of the creditNote. Needs to be added if you chose the tax type custom",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the object",
@@ -11719,12 +10885,7 @@
           "sendType": {
             "description": "Type which was used to send the creditNote. IMPORTANT: Please refer to the creditNote section of the\r\n     *     API-Overview to understand how this attribute can be used before using it!",
             "type": "string",
-            "enum": [
-              "VPR",
-              "VPDF",
-              "VM",
-              "VP"
-            ],
+            "enum": ["VPR", "VPDF", "VM", "VP"],
             "nullable": true
           }
         },
@@ -11788,10 +10949,7 @@
           },
           "contact": {
             "description": "The contact used in the creditNote",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the contact",
@@ -11816,14 +10974,7 @@
           "status": {
             "description": "Please have a look in \r\n    <a href='https://api.sevdesk.de/#section/Types-and-status-of-credit-notes'>status of credit note</a>\r\n    to see what the different status codes mean",
             "type": "string",
-            "enum": [
-              "100",
-              "200",
-              "300",
-              "500",
-              "750",
-              "1000"
-            ],
+            "enum": ["100", "200", "300", "500", "750", "1000"],
             "example": "100",
             "nullable": false
           },
@@ -11845,10 +10996,7 @@
           },
           "addressCountry": {
             "description": "Can be omitted as complete address is defined in address attribute",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the country",
@@ -11866,10 +11014,7 @@
           },
           "createUser": {
             "description": "Will be filled automatically by our system and can't be changed",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the user",
@@ -11886,10 +11031,7 @@
           },
           "sevClient": {
             "description": "Client to which creditNote belongs. Will be filled automatically",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the client",
@@ -11928,10 +11070,7 @@
           },
           "contactPerson": {
             "description": "The user who acts as a contact person for the creditNote",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the user",
@@ -11954,10 +11093,7 @@
           },
           "taxSet": {
             "description": "Tax set of the creditNote. Needs to be added if you chose the tax type custom",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the object",
@@ -12085,12 +11221,7 @@
           "sendType": {
             "description": "Type which was used to send the creditNote. IMPORTANT: Please refer to the creditNote section of the\r\n     *     API-Overview to understand how this attribute can be used before using it!",
             "type": "string",
-            "enum": [
-              "VPR",
-              "VPDF",
-              "VM",
-              "VP"
-            ],
+            "enum": ["VPR", "VPDF", "VM", "VP"],
             "nullable": true
           }
         },
@@ -12099,13 +11230,7 @@
       "Model_creditNotePos": {
         "title": "creditNote position model",
         "description": "creditNote position model",
-        "required": [
-          "unity",
-          "taxRate",
-          "quantity",
-          "mapAll",
-          "objectName"
-        ],
+        "required": ["unity", "taxRate", "quantity", "mapAll", "objectName"],
         "properties": {
           "id": {
             "description": "The creditNote position id.",
@@ -12137,10 +11262,7 @@
           },
           "creditNote": {
             "description": "The creditNote to which the position belongs.  <span style='color:red'>Required</span> if you want to create/update an credit note position for an existing credit note\"",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the creditNote",
@@ -12156,10 +11278,7 @@
           },
           "part": {
             "description": "Part from your inventory which is used in the position.",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the part",
@@ -12216,10 +11335,7 @@
           },
           "unity": {
             "description": "The unit in which the positions part is measured",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the unit",
@@ -12235,10 +11351,7 @@
           },
           "sevClient": {
             "description": "Client to which creditNote position belongs. Will be filled automatically",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the client",
@@ -12294,10 +11407,7 @@
       },
       "saveCreditNote": {
         "type": "object",
-        "required": [
-          "creditNote",
-          "creditNotePos"
-        ],
+        "required": ["creditNote", "creditNotePos"],
         "properties": {
           "creditNote": {
             "$ref": "#/components/schemas/Model_creditNote"
@@ -12309,10 +11419,7 @@
             }
           },
           "creditNotePosDelete": {
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Id of credit note position",
@@ -12371,10 +11478,7 @@
             "default": null
           },
           "discountDelete": {
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "ID of discount to delete",
@@ -12393,12 +11497,7 @@
       "Model_creditNotePosResponse": {
         "title": "creditNote position model",
         "description": "creditNote position model",
-        "required": [
-          "creditNote",
-          "unity",
-          "taxRate",
-          "quantity"
-        ],
+        "required": ["creditNote", "unity", "taxRate", "quantity"],
         "properties": {
           "id": {
             "description": "The creditNote position id",
@@ -12428,10 +11527,7 @@
           },
           "creditNote": {
             "description": "The creditNote to which the position belongs.",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the creditNote",
@@ -12448,10 +11544,7 @@
           },
           "part": {
             "description": "Part from your inventory which is used in the position.",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the part",
@@ -12505,10 +11598,7 @@
           },
           "unity": {
             "description": "The unit in which the positions part is measured",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the unit",
@@ -12525,10 +11615,7 @@
           },
           "sevClient": {
             "description": "Client to which creditNote position belongs. Will be filled automatically",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the client",
@@ -12693,10 +11780,7 @@
           },
           "contact": {
             "description": "The contact used in the creditNote",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the contact",
@@ -12721,11 +11805,7 @@
           "status": {
             "description": "Please have a look in \r\n    <a href='https://api.sevdesk.de/#section/Types-and-status-of-credit-notes'>status of credit note</a>\r\n    to see what the different status codes mean",
             "type": "string",
-            "enum": [
-              "100",
-              "200",
-              "1000"
-            ],
+            "enum": ["100", "200", "1000"],
             "example": "100",
             "nullable": false
           },
@@ -12747,10 +11827,7 @@
           },
           "addressCountry": {
             "description": "Can be omitted as complete address is defined in address attribute",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the country",
@@ -12768,10 +11845,7 @@
           },
           "createUser": {
             "description": "Will be filled automatically by our system and can't be changed",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the user",
@@ -12788,10 +11862,7 @@
           },
           "sevClient": {
             "description": "Client to which creditNote belongs. Will be filled automatically",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the client",
@@ -12837,10 +11908,7 @@
           },
           "contactPerson": {
             "description": "The user who acts as a contact person for the creditNote",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the user",
@@ -12864,10 +11932,7 @@
           },
           "taxSet": {
             "description": "Tax set of the creditNote. Needs to be added if you chose the tax type custom",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the object",
@@ -12973,12 +12038,7 @@
           "sendType": {
             "description": "Type which was used to send the creditNote. IMPORTANT: Please refer to the creditNote section of the\r\n     *     API-Overview to understand how this attribute can be used before using it!",
             "type": "string",
-            "enum": [
-              "VPR",
-              "VPDF",
-              "VM",
-              "VP"
-            ],
+            "enum": ["VPR", "VPDF", "VM", "VP"],
             "nullable": true
           }
         },
@@ -13096,10 +12156,7 @@
           },
           "sevClient": {
             "description": "Client to which creditNote belongs. Will be filled automatically",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the client",
@@ -13118,13 +12175,7 @@
       "Model_Part": {
         "title": "Part model",
         "description": "Part model",
-        "required": [
-          "taxRate",
-          "unity",
-          "stock",
-          "name",
-          "partNumber"
-        ],
+        "required": ["taxRate", "unity", "stock", "name", "partNumber"],
         "properties": {
           "id": {
             "description": "The part id",
@@ -13167,10 +12218,7 @@
           },
           "category": {
             "description": "Category of the part.<br>\r\n    For all categories, send a GET to /Category?objectType=Part",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the category",
@@ -13199,10 +12247,7 @@
           },
           "unity": {
             "description": "The unit in which the part is measured",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the unit",
@@ -13240,10 +12285,7 @@
           },
           "sevClient": {
             "description": "Client to which part belongs. Will be filled automatically",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the client",
@@ -13274,10 +12316,7 @@
             "description": "Status of the part. 50 <-> Inactive - 100 <-> Active",
             "type": "integer",
             "example": 100,
-            "enum": [
-              50,
-              100
-            ],
+            "enum": [50, 100],
             "nullable": true
           },
           "internalComment": {
@@ -13333,10 +12372,7 @@
           },
           "category": {
             "description": "Category of the part.<br>\r\n    For all categories, send a GET to /Category?objectType=Part",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the category",
@@ -13365,10 +12401,7 @@
           },
           "unity": {
             "description": "The unit in which the part is measured",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the unit",
@@ -13406,10 +12439,7 @@
           },
           "sevClient": {
             "description": "Client to which part belongs. Will be filled automatically",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the client",
@@ -13440,10 +12470,7 @@
             "description": "Status of the part. 50 <-> Inactive - 100 <-> Active",
             "type": "integer",
             "example": 100,
-            "enum": [
-              50,
-              100
-            ],
+            "enum": [50, 100],
             "nullable": true
           },
           "internalComment": {
@@ -13479,10 +12506,7 @@
           "contact": {
             "description": "The contact used in the invoice",
             "readOnly": true,
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the contact",
@@ -13511,10 +12535,7 @@
           },
           "sevClient": {
             "description": "Client to which invoice belongs. Will be filled automatically",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the client",
@@ -13574,10 +12595,7 @@
           },
           "addressCountry": {
             "description": "Can be omitted as complete address is defined in address attribute",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the country",
@@ -13602,10 +12620,7 @@
           },
           "createUser": {
             "description": "Will be filled automatically by our system and can't be changed",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the user",
@@ -13631,12 +12646,7 @@
           "status": {
             "description": "Please have a look in our\r\n     <a href='https://api.sevdesk.de/#section/Types-and-status-of-invoices'>Types and status of invoices</a>\r\n     to see what the different status codes mean",
             "type": "string",
-            "enum": [
-              "50",
-              "100",
-              "200",
-              "1000"
-            ],
+            "enum": ["50", "100", "200", "1000"],
             "example": "100",
             "readOnly": true
           },
@@ -13648,10 +12658,7 @@
           },
           "contactPerson": {
             "description": "The user who acts as a contact person for the invoice",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the user",
@@ -13689,20 +12696,12 @@
             "description": "Tax type of the invoice.\nThere are four tax types:\n1. default - Umsatzsteuer ausweisen\n2. eu - Steuerfreie innergemeinschaftliche Lieferung (Europäische Union)\n3. noteu - Steuerschuldnerschaft des Leistungsempfängers (außerhalb EU, z. B. Schweiz)\n4. custom - Using custom tax set\n5. ss - Not subject to VAT according to §19 1 UStG\nTax rates are heavily connected to the tax type used.",
             "type": "string",
             "example": "default",
-            "enum": [
-              "default",
-              "eu",
-              "noteu",
-              "custom"
-            ],
+            "enum": ["default", "eu", "noteu", "custom"],
             "readOnly": true
           },
           "paymentMethod": {
             "description": "Payment method used for the invoice",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the payment method",
@@ -13720,10 +12719,7 @@
           },
           "costCentre": {
             "description": "Cost centre for the invoice",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the cost centre",
@@ -13748,10 +12744,7 @@
           },
           "origin": {
             "description": "Origin of the invoice. Could f.e. be an order",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the object",
@@ -13770,14 +12763,7 @@
             "description": "Type of the invoice. For more information on the different types, check\r\n     <a href='https://api.sevdesk.de/#section/Types-and-status-of-invoices'>this</a> section\r\n",
             "type": "string",
             "example": "RE",
-            "enum": [
-              "RE",
-              "WKR",
-              "SR",
-              "MA",
-              "TR",
-              "ER"
-            ],
+            "enum": ["RE", "WKR", "SR", "MA", "TR", "ER"],
             "readOnly": true
           },
           "accountIntervall": {
@@ -13819,10 +12805,7 @@
           },
           "taxSet": {
             "description": "Tax set of the invoice. Needs to be added if you chose the tax type custom",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the object",
@@ -13944,12 +12927,7 @@
           "sendType": {
             "description": "Type which was used to send the invoice. IMPORTANT: Please refer to the invoice section of the\r\n     *     API-Overview to understand how this attribute can be used before using it!",
             "type": "string",
-            "enum": [
-              "VPR",
-              "VPDF",
-              "VM",
-              "VP"
-            ],
+            "enum": ["VPR", "VPDF", "VM", "VP"],
             "readOnly": true
           },
           "deliveryDateUntil": {
@@ -14011,10 +12989,7 @@
           },
           "contact": {
             "description": "The contact used in the invoice",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the contact",
@@ -14031,10 +13006,7 @@
           },
           "contactPerson": {
             "description": "The user who acts as a contact person for the invoice",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the user",
@@ -14062,10 +13034,7 @@
           },
           "sevClient": {
             "description": "Client to which invoice belongs. Will be filled automatically",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the client",
@@ -14124,10 +13093,7 @@
           },
           "addressCountry": {
             "description": "Can be omitted as complete address is defined in address attribute",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the country",
@@ -14151,10 +13117,7 @@
           },
           "createUser": {
             "description": "Will be filled automatically by our system and can't be changed",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the user",
@@ -14185,12 +13148,7 @@
           "status": {
             "description": "Please have a look in our\r\n     <a href='https://api.sevdesk.de/#section/Types-and-status-of-invoices'>Types and status of invoices</a>\r\n     to see what the different status codes mean",
             "type": "string",
-            "enum": [
-              "50",
-              "100",
-              "200",
-              "1000"
-            ],
+            "enum": ["50", "100", "200", "1000"],
             "example": "100",
             "nullable": false
           },
@@ -14217,20 +13175,12 @@
             "description": "Tax type of the invoice.\nThere are four tax types:\n1. default - Umsatzsteuer ausweisen\n2. eu - Steuerfreie innergemeinschaftliche Lieferung (Europäische Union)\n3. noteu - Steuerschuldnerschaft des Leistungsempfängers (außerhalb EU, z. B. Schweiz)\n4. custom - Using custom tax set\n5. ss - Not subject to VAT according to §19 1 UStG\nTax rates are heavily connected to the tax type used.",
             "type": "string",
             "example": "default",
-            "enum": [
-              "default",
-              "eu",
-              "noteu",
-              "custom"
-            ],
+            "enum": ["default", "eu", "noteu", "custom"],
             "nullable": false
           },
           "taxSet": {
             "description": "Tax set of the invoice. Needs to be added if you chose the tax type custom",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the object",
@@ -14255,10 +13205,7 @@
           },
           "paymentMethod": {
             "description": "Payment method used for the invoice",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the payment method",
@@ -14284,14 +13231,7 @@
             "description": "Type of the invoice. For more information on the different types, check\r\n     <a href='https://api.sevdesk.de/#section/Types-and-status-of-invoices'>this</a> section\r\n",
             "type": "string",
             "example": "RE",
-            "enum": [
-              "RE",
-              "WKR",
-              "SR",
-              "MA",
-              "TR",
-              "ER"
-            ],
+            "enum": ["RE", "WKR", "SR", "MA", "TR", "ER"],
             "nullable": false
           },
           "accountIntervall": {
@@ -14413,20 +13353,12 @@
           "sendType": {
             "description": "Type which was used to send the invoice.",
             "type": "string",
-            "enum": [
-              "VPR",
-              "VPDF",
-              "VM",
-              "VP"
-            ],
+            "enum": ["VPR", "VPDF", "VM", "VP"],
             "nullable": true
           },
           "origin": {
             "description": "Origin of the invoice. Could f.e. be an order",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the object",
@@ -14459,13 +13391,7 @@
       "Model_InvoicePos": {
         "title": "Invoice position model",
         "description": "Invoice position model",
-        "required": [
-          "unity",
-          "taxRate",
-          "quantity",
-          "objectName",
-          "mapAll"
-        ],
+        "required": ["unity", "taxRate", "quantity", "objectName", "mapAll"],
         "properties": {
           "id": {
             "description": "The invoice position id. <span style='color:red'>Required</span> if you want to update an invoice position for an existing invoice",
@@ -14499,10 +13425,7 @@
           },
           "invoice": {
             "description": "The invoice to which the position belongs.",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the invoice",
@@ -14519,10 +13442,7 @@
           },
           "part": {
             "description": "Part from your inventory which is used in the position.",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the part",
@@ -14558,10 +13478,7 @@
           },
           "unity": {
             "description": "The unit in which the positions part is measured",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the unit",
@@ -14578,10 +13495,7 @@
           },
           "sevClient": {
             "description": "Client to which invoice position belongs. Will be filled automatically",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the client",
@@ -14672,10 +13586,7 @@
       },
       "saveInvoice": {
         "type": "object",
-        "required": [
-          "invoice",
-          "invoicePos"
-        ],
+        "required": ["invoice", "invoicePos"],
         "properties": {
           "invoice": {
             "$ref": "#/components/schemas/Model_Invoice"
@@ -14687,10 +13598,7 @@
             }
           },
           "invoicePosDelete": {
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Id of invoice position",
@@ -14798,10 +13706,7 @@
           },
           "invoice": {
             "description": "The invoice to which the position belongs.",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the invoice",
@@ -14819,10 +13724,7 @@
           },
           "part": {
             "description": "Part from your inventory which is used in the position.",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the part",
@@ -14858,10 +13760,7 @@
           },
           "unity": {
             "description": "The unit in which the positions part is measured",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the unit",
@@ -14879,10 +13778,7 @@
           },
           "sevClient": {
             "description": "Client to which invoice position belongs. Will be filled automatically",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the client",
@@ -14988,16 +13884,11 @@
       "Model_CreateInvoiceFromOrder": {
         "title": "Create Invoice",
         "description": "Invoice model",
-        "required": [
-          "order"
-        ],
+        "required": ["order"],
         "properties": {
           "order": {
             "description": "select the order for which you want to create the invoice",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the order",
@@ -15015,11 +13906,7 @@
           "type": {
             "description": "defines the type of amount",
             "type": "string",
-            "enum": [
-              "percentage",
-              "net",
-              "gross"
-            ],
+            "enum": ["percentage", "net", "gross"],
             "nullable": true
           },
           "amount": {
@@ -15030,23 +13917,49 @@
           },
           "partialType": {
             "description": "defines the type of the invoice\n1. RE - Schlussrechnung\n2. TR - Teilrechnung\n3. AR - Abschlagsrechnung",
-            "enum": [
-              "RE",
-              "TR",
-              "AR"
-            ],
+            "enum": ["RE", "TR", "AR"],
             "nullable": true
           }
         }
       },
+      "sendInvoiceViaEMail": {
+        "required": ["toEmail", "subject", "text"],
+        "properties": {
+          "toEmail": {
+            "description": "The recipient of the email.",
+            "type": "string"
+          },
+          "subject": {
+            "description": "The subject of the email.",
+            "type": "string"
+          },
+          "text": {
+            "description": "The text of the email. Can contain html.",
+            "type": "string"
+          },
+          "copy": {
+            "description": "Should a copy of this email be sent to you?",
+            "type": "boolean"
+          },
+          "additionalAttachments": {
+            "description": "Additional attachments to the mail. String of IDs of existing documents in your\r\n     *                      sevdesk account separated by ','",
+            "type": "string"
+          },
+          "ccEmail": {
+            "description": "String of mail addresses to be put as cc separated by ','",
+            "type": "string"
+          },
+          "bccEmail": {
+            "description": "String of mail addresses to be put as bcc separated by ','",
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
       "Model_Email": {
         "title": "Email model",
         "description": "Email model",
-        "required": [
-          "from",
-          "to",
-          "subject"
-        ],
+        "required": ["from", "to", "subject"],
         "properties": {
           "id": {
             "description": "The email id",
@@ -15099,10 +14012,7 @@
           },
           "sevClient": {
             "description": "Client to which mail belongs. Will be filled automatically",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the client",
@@ -15139,20 +14049,12 @@
       "Model_ChangeLayout": {
         "title": "Layout model",
         "description": "Layout model",
-        "required": [
-          "key",
-          "value"
-        ],
+        "required": ["key", "value"],
         "properties": {
           "key": {
             "description": "the type to be changed",
             "type": "string",
-            "enum": [
-              "language",
-              "template",
-              "letterpaper",
-              "payPal"
-            ],
+            "enum": ["language", "template", "letterpaper", "payPal"],
             "example": "template",
             "nullable": false
           },
@@ -15261,10 +14163,7 @@
           },
           "contact": {
             "description": "The contact used in the order",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the contact",
@@ -15290,14 +14189,7 @@
           "status": {
             "description": "Please have a look in \r\n    <a href='https://api.sevdesk.de/#section/Types-and-status-of-orders'>status of orders</a>\r\n    to see what the different status codes mean",
             "type": "string",
-            "enum": [
-              "100",
-              "200",
-              "300",
-              "500",
-              "750",
-              "1000"
-            ],
+            "enum": ["100", "200", "300", "500", "750", "1000"],
             "example": "100",
             "nullable": false
           },
@@ -15319,10 +14211,7 @@
           },
           "addressCountry": {
             "description": "Can be omitted as complete address is defined in address attribute",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the country",
@@ -15338,10 +14227,7 @@
           },
           "createUser": {
             "description": "Will be filled automatically by our system and can't be changed",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the user",
@@ -15359,10 +14245,7 @@
           },
           "sevClient": {
             "description": "Client to which order belongs. Will be filled automatically",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the client",
@@ -15390,10 +14273,7 @@
           },
           "origin": {
             "description": "Object from which the order was created. For example an offer.",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the object",
@@ -15423,10 +14303,7 @@
           },
           "contactPerson": {
             "description": "The user who acts as a contact person for the order",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the user",
@@ -15449,10 +14326,7 @@
           },
           "taxSet": {
             "description": "Tax set of the order. Needs to be added if you chose the tax type custom",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the object",
@@ -15483,11 +14357,7 @@
           "orderType": {
             "description": "Type of the order. For more information on the different types, check\r\n    <a href='https://api.sevdesk.de/#section/Types-and-status-of-orders'>this</a>\r\n",
             "type": "string",
-            "enum": [
-              "AN",
-              "AB",
-              "LI"
-            ],
+            "enum": ["AN", "AB", "LI"],
             "example": "AN",
             "nullable": false
           },
@@ -15570,12 +14440,7 @@
           "sendType": {
             "description": "Type which was used to send the order. IMPORTANT: Please refer to the order section of the\r\n     *     API-Overview to understand how this attribute can be used before using it!",
             "type": "string",
-            "enum": [
-              "VPR",
-              "VPDF",
-              "VM",
-              "VP"
-            ],
+            "enum": ["VPR", "VPDF", "VM", "VP"],
             "nullable": true
           }
         },
@@ -15634,10 +14499,7 @@
           },
           "contact": {
             "description": "The contact used in the order",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the contact",
@@ -15662,14 +14524,7 @@
           "status": {
             "description": "Please have a look in \r\n    <a href='https://api.sevdesk.de/#section/Types-and-status-of-orders'>status of orders</a>\r\n    to see what the different status codes mean",
             "type": "integer",
-            "enum": [
-              100,
-              200,
-              300,
-              500,
-              750,
-              1000
-            ],
+            "enum": [100, 200, 300, 500, 750, 1000],
             "example": 100,
             "nullable": false
           },
@@ -15695,10 +14550,7 @@
           },
           "addressCountry": {
             "description": "Can be omitted as complete address is defined in address attribute",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the country",
@@ -15741,10 +14593,7 @@
           },
           "contactPerson": {
             "description": "The user who acts as a contact person for the order",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the user",
@@ -15768,10 +14617,7 @@
           },
           "taxSet": {
             "description": "Tax set of the order. Needs to be added if you chose the tax type custom",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the object",
@@ -15801,11 +14647,7 @@
           "orderType": {
             "description": "Type of the order. For more information on the different types, check\r\n    <a href='https://api.sevdesk.de/#section/Types-and-status-of-orders'>this</a> \r\n",
             "type": "string",
-            "enum": [
-              "AN",
-              "AB",
-              "LI"
-            ],
+            "enum": ["AN", "AB", "LI"],
             "example": "AN",
             "nullable": false
           },
@@ -15847,20 +14689,12 @@
             "type": "string",
             "default": null,
             "example": "VPR",
-            "enum": [
-              "VPR",
-              "VPDF",
-              "VM",
-              "VP"
-            ],
+            "enum": ["VPR", "VPDF", "VM", "VP"],
             "nullable": true
           },
           "origin": {
             "description": "Object from which the order was created. For example an offer.",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the object",
@@ -15880,11 +14714,7 @@
       "Model_OrderPos": {
         "title": "Order position model",
         "description": "Order position model",
-        "required": [
-          "unity",
-          "taxRate",
-          "quantity"
-        ],
+        "required": ["unity", "taxRate", "quantity"],
         "properties": {
           "id": {
             "description": "The order position id",
@@ -15910,10 +14740,7 @@
           },
           "order": {
             "description": "The order to which the position belongs.",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the order",
@@ -15929,10 +14756,7 @@
           },
           "part": {
             "description": "Part from your inventory which is used in the position.",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the part",
@@ -15982,10 +14806,7 @@
           },
           "unity": {
             "description": "The unit in which the positions part is measured",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the unit",
@@ -16001,10 +14822,7 @@
           },
           "sevClient": {
             "description": "Client to which order position belongs. Will be filled automatically",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the client",
@@ -16056,10 +14874,7 @@
       },
       "saveOrder": {
         "type": "object",
-        "required": [
-          "order",
-          "orderPos"
-        ],
+        "required": ["order", "orderPos"],
         "properties": {
           "order": {
             "$ref": "#/components/schemas/Model_Order"
@@ -16071,10 +14886,7 @@
             }
           },
           "orderPosDelete": {
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Id of order position",
@@ -16123,10 +14935,7 @@
           },
           "order": {
             "description": "The order to which the position belongs.",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the order",
@@ -16143,10 +14952,7 @@
           },
           "part": {
             "description": "Part from your inventory which is used in the position.",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the part",
@@ -16200,10 +15006,7 @@
           },
           "unity": {
             "description": "The unit in which the positions part is measured",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the unit",
@@ -16220,10 +15023,7 @@
           },
           "sevClient": {
             "description": "Client to which order position belongs. Will be filled automatically",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the client",
@@ -16323,10 +15123,7 @@
           },
           "contact": {
             "description": "The contact used in the order",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the contact",
@@ -16351,14 +15148,7 @@
           "status": {
             "description": "Please have a look in \r\n    <a href='https://api.sevdesk.de/#section/Types-and-status-of-orders'>status of orders</a>\r\n    to see what the different status codes mean",
             "type": "integer",
-            "enum": [
-              100,
-              200,
-              300,
-              500,
-              750,
-              1000
-            ],
+            "enum": [100, 200, 300, 500, 750, 1000],
             "example": 100,
             "nullable": true
           },
@@ -16380,10 +15170,7 @@
           },
           "addressCountry": {
             "description": "Can be omitted as complete address is defined in address attribute",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the country",
@@ -16399,10 +15186,7 @@
           },
           "createUser": {
             "description": "Will be filled automatically by our system and can't be changed",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the user",
@@ -16418,10 +15202,7 @@
           },
           "sevClient": {
             "description": "Client to which order belongs. Will be filled automatically",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the client",
@@ -16447,10 +15228,7 @@
           },
           "origin": {
             "description": "Object from which the order was created. For example an offer.",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the object",
@@ -16478,10 +15256,7 @@
           },
           "contactPerson": {
             "description": "The user who acts as a contact person for the order",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the user",
@@ -16503,10 +15278,7 @@
           },
           "taxSet": {
             "description": "Tax set of the order. Needs to be added if you chose the tax type custom",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the object",
@@ -16535,11 +15307,7 @@
           "orderType": {
             "description": "Type of the order. For more information on the different types, check\r\n    <a href='https://api.sevdesk.de/#section/Types-and-status-of-orders'>this</a>\r\n",
             "type": "string",
-            "enum": [
-              "AN",
-              "AB",
-              "LI"
-            ],
+            "enum": ["AN", "AB", "LI"],
             "example": "AN",
             "nullable": true
           },
@@ -16622,12 +15390,7 @@
           "sendType": {
             "description": "Type which was used to send the order. IMPORTANT: Please refer to the order section of the\r\n     *     API-Overview to understand how this attribute can be used before using it!",
             "type": "string",
-            "enum": [
-              "VPR",
-              "VPDF",
-              "VM",
-              "VP"
-            ],
+            "enum": ["VPR", "VPDF", "VM", "VP"],
             "nullable": true
           }
         },
@@ -16665,10 +15428,7 @@
           },
           "object": {
             "description": "The order used for the discount",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the order",
@@ -16715,11 +15475,7 @@
       "Model_EmailOrder": {
         "title": "Email model",
         "description": "Email model",
-        "required": [
-          "from",
-          "to",
-          "subject"
-        ],
+        "required": ["from", "to", "subject"],
         "properties": {
           "id": {
             "description": "The email id",
@@ -16772,10 +15528,7 @@
           },
           "sevClient": {
             "description": "Client to which mail belongs. Will be filled automatically",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the client",
@@ -16812,10 +15565,7 @@
       "Model_CreatePackingListFromOrder": {
         "title": "Create packing list",
         "description": "order model",
-        "required": [
-          "id",
-          "objectName"
-        ],
+        "required": ["id", "objectName"],
         "properties": {
           "id": {
             "description": "Unique identifier of the order",
@@ -16863,10 +15613,7 @@
           },
           "order": {
             "description": "The order to which the position belongs.",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the order",
@@ -16882,10 +15629,7 @@
           },
           "part": {
             "description": "Part from your inventory which is used in the position.",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the part",
@@ -16935,10 +15679,7 @@
           },
           "unity": {
             "description": "The unit in which the positions part is measured",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the unit",
@@ -16954,10 +15695,7 @@
           },
           "sevClient": {
             "description": "Client to which order position belongs. Will be filled automatically",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the client",
@@ -17051,10 +15789,7 @@
           },
           "sevClient": {
             "description": "Client to which voucher belongs. Will be filled automatically",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the client",
@@ -17071,10 +15806,7 @@
           },
           "createUser": {
             "description": "User who created the voucher. Will be filled automatically.",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the user",
@@ -17098,10 +15830,7 @@
           },
           "supplier": {
             "description": "The contact used in the voucher as a supplier.<br>\nIf you don't have a contact as a supplier, you can set this object to null.",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the contact",
@@ -17138,11 +15867,7 @@
           "status": {
             "description": "Please have a look in \r\n    <a href='https://api.sevdesk.de/#section/Types-and-status-of-vouchers'>status of vouchers</a>\r\n    to see what the different status codes mean",
             "type": "number",
-            "enum": [
-              50,
-              100,
-              1000
-            ],
+            "enum": [50, 100, 1000],
             "example": 50,
             "nullable": false
           },
@@ -17218,20 +15943,14 @@
           "creditDebit": {
             "description": "Defines if your voucher is a credit (C) or debit (D)",
             "type": "string",
-            "enum": [
-              "C",
-              "D"
-            ],
+            "enum": ["C", "D"],
             "example": "C",
             "nullable": false
           },
           "voucherType": {
             "description": "Type of the voucher. For more information on the different types, check\r\n     <a href='https://api.sevdesk.de/#section/Types-and-status-of-vouchers'>this</a>\r\n",
             "type": "string",
-            "enum": [
-              "VOU",
-              "RV"
-            ],
+            "enum": ["VOU", "RV"],
             "example": "VOU",
             "nullable": false
           },
@@ -17315,10 +16034,7 @@
           },
           "taxSet": {
             "description": "Tax set of the voucher. Needs to be added if you chose the tax type custom",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the object",
@@ -17357,10 +16073,7 @@
           },
           "document": {
             "description": "The document of the voucher.",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the document",
@@ -17378,10 +16091,7 @@
           },
           "costCentre": {
             "description": "Cost centre for the voucher",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the cost centre",
@@ -17442,10 +16152,7 @@
           },
           "sevClient": {
             "description": "Client to which voucher position belongs. Will be filled automatically",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the client",
@@ -17461,10 +16168,7 @@
           },
           "voucher": {
             "description": "The voucher to which the position belongs.",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the voucher",
@@ -17481,10 +16185,7 @@
           },
           "accountingType": {
             "description": "The accounting type to which the position belongs.<br>\r\n     An accounting type is the booking account to which the position belongs.<br>\r\n     For more information, please refer to\r\n     <a href='https://api.sevdesk.de/#section/Accounting-type'>this</a> section.",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the accounting type",
@@ -17500,10 +16201,7 @@
           },
           "estimatedAccountingType": {
             "description": "The accounting type to which the position belongs estimated by our voucher recognition.<br>\r\n    An accounting type is the booking account to which the position belongs.<br>\r\n    For more information, please refer to\r\n    <a href='https://api.sevdesk.de/#section/Accounting-type'>this</a> section.",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the accounting type",
@@ -17581,10 +16279,7 @@
       },
       "saveVoucher": {
         "type": "object",
-        "required": [
-          "voucher",
-          "voucherPos"
-        ],
+        "required": ["voucher", "voucherPos"],
         "properties": {
           "voucher": {
             "$ref": "#/components/schemas/Model_Voucher"
@@ -17596,10 +16291,7 @@
             }
           },
           "voucherPosDelete": {
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Id of voucher position",
@@ -17657,10 +16349,7 @@
           },
           "sevClient": {
             "description": "Client to which voucher belongs. Will be filled automatically",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the client",
@@ -17678,10 +16367,7 @@
           },
           "createUser": {
             "description": "User who created the voucher. Will be filled automatically.",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the user",
@@ -17706,10 +16392,7 @@
           },
           "supplier": {
             "description": "The contact used in the voucher as a supplier.<br>\nIf you don't have a contact as a supplier, you can set this object to null.",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the contact",
@@ -17739,10 +16422,7 @@
           },
           "document": {
             "description": "The document of the voucher.",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the document",
@@ -17768,11 +16448,7 @@
           "status": {
             "description": "Please have a look in \r\n    <a href='https://api.sevdesk.de/#section/Types-and-status-of-vouchers'>status of vouchers</a>\r\n    to see what the different status codes mean",
             "type": "string",
-            "enum": [
-              "50",
-              "100",
-              "1000"
-            ],
+            "enum": ["50", "100", "1000"],
             "example": "50",
             "nullable": true
           },
@@ -17848,19 +16524,13 @@
           "creditDebit": {
             "description": "Defines if your voucher is a credit (C) or debit (D)",
             "type": "string",
-            "enum": [
-              "C",
-              "D"
-            ],
+            "enum": ["C", "D"],
             "example": "C",
             "nullable": true
           },
           "costCentre": {
             "description": "Cost centre for the voucher",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the cost centre",
@@ -17877,10 +16547,7 @@
           "voucherType": {
             "description": "Type of the voucher. For more information on the different types, check\r\n     <a href='https://api.sevdesk.de/#section/Types-and-status-of-vouchers'>this</a>\r\n",
             "type": "string",
-            "enum": [
-              "VOU",
-              "RV"
-            ],
+            "enum": ["VOU", "RV"],
             "example": "VOU",
             "nullable": true
           },
@@ -17957,10 +16624,7 @@
           },
           "taxSet": {
             "description": "Tax set of the voucher. Needs to be added if you chose the tax type custom",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the object",
@@ -18039,10 +16703,7 @@
           },
           "sevClient": {
             "description": "Client to which voucher position belongs. Will be filled automatically",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the client",
@@ -18060,10 +16721,7 @@
           },
           "voucher": {
             "description": "The voucher to which the position belongs.",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the voucher",
@@ -18081,10 +16739,7 @@
           },
           "accountingType": {
             "description": "The accounting type to which the position belongs.<br>\r\n     An accounting type is the booking account to which the position belongs.<br>\r\n     For more information, please refer to\r\n     <a href='https://api.sevdesk.de/#section/Accounting-type'>this</a> section.",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the accounting type",
@@ -18101,10 +16756,7 @@
           },
           "estimatedAccountingType": {
             "description": "The accounting type to which the position belongs estimated by our voucher recognition.<br>\r\n    An accounting type is the booking account to which the position belongs.<br>\r\n    For more information, please refer to\r\n    <a href='https://api.sevdesk.de/#section/Accounting-type'>this</a> section.",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the accounting type",
@@ -18226,10 +16878,7 @@
           },
           "supplier": {
             "description": "The contact used in the voucher as a supplier.<br>\nIf you don't have a contact as a supplier, you can set this object to null.",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the contact",
@@ -18266,11 +16915,7 @@
           "status": {
             "description": "Please have a look in \r\n    <a href='https://api.sevdesk.de/#section/Types-and-status-of-vouchers'>status of vouchers</a>\r\n    to see what the different status codes mean",
             "type": "number",
-            "enum": [
-              50,
-              100,
-              1000
-            ],
+            "enum": [50, 100, 1000],
             "example": 50
           },
           "paidAmount": {
@@ -18288,19 +16933,13 @@
           "creditDebit": {
             "description": "Defines if your voucher is a credit (C) or debit (D)",
             "type": "string",
-            "enum": [
-              "C",
-              "D"
-            ],
+            "enum": ["C", "D"],
             "example": "C"
           },
           "voucherType": {
             "description": "Type of the voucher. For more information on the different types, check\r\n     <a href='https://api.sevdesk.de/#section/Types-and-status-of-vouchers'>this</a>\r\n",
             "type": "string",
-            "enum": [
-              "VOU",
-              "RV"
-            ],
+            "enum": ["VOU", "RV"],
             "example": "VOU"
           },
           "currency": {
@@ -18325,10 +16964,7 @@
           },
           "taxSet": {
             "description": "Tax set of the voucher. Needs to be added if you chose the tax type custom",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the object",
@@ -18366,10 +17002,7 @@
           },
           "document": {
             "description": "The document of the voucher.",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the document",
@@ -18387,10 +17020,7 @@
           },
           "costCentre": {
             "description": "Cost centre for the voucher",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the cost centre",
@@ -18440,10 +17070,7 @@
           },
           "sevClient": {
             "description": "Client to which invoice belongs. Will be filled automatically",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the client",
@@ -18488,10 +17115,7 @@
           },
           "tag": {
             "description": "The tag information",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the tag",
@@ -18507,10 +17131,7 @@
             "type": "object"
           },
           "object": {
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Id of the invoice/order/voucher/creditNote",
@@ -18521,22 +17142,14 @@
                 "description": "Model name",
                 "type": "string",
                 "example": "Invoice",
-                "enum": [
-                  "Invoice",
-                  "Voucher",
-                  "Order",
-                  "CreditNote"
-                ]
+                "enum": ["Invoice", "Voucher", "Order", "CreditNote"]
               }
             },
             "type": "object"
           },
           "sevClient": {
             "description": "Client to which invoice belongs. Will be filled automatically",
-            "required": [
-              "id",
-              "objectName"
-            ],
+            "required": ["id", "objectName"],
             "properties": {
               "id": {
                 "description": "Unique identifier of the client",
@@ -18565,10 +17178,7 @@
   "x-tagGroups": [
     {
       "name": "banking",
-      "tags": [
-        "CheckAccount",
-        "CheckAccountTransaction"
-      ],
+      "tags": ["CheckAccount", "CheckAccountTransaction"],
       "description": "Title"
     },
     {
@@ -18583,73 +17193,49 @@
     },
     {
       "name": "contactCustomFieldSetting",
-      "tags": [
-        "ContactField"
-      ],
+      "tags": ["ContactField"],
       "description": "Title"
     },
     {
       "name": "creditNote",
-      "tags": [
-        "CreditNote",
-        "CreditNotePos"
-      ],
+      "tags": ["CreditNote", "CreditNotePos"],
       "description": "Title"
     },
     {
       "name": "export",
-      "tags": [
-        "Export"
-      ]
+      "tags": ["Export"]
     },
     {
       "name": "inventory",
-      "tags": [
-        "Part"
-      ]
+      "tags": ["Part"]
     },
     {
       "name": "invoice",
-      "tags": [
-        "Invoice",
-        "InvoicePos"
-      ],
+      "tags": ["Invoice", "InvoicePos"],
       "description": "Title"
     },
     {
       "name": "layout",
-      "tags": [
-        "Layout"
-      ],
+      "tags": ["Layout"],
       "description": "Title"
     },
     {
       "name": "order",
-      "tags": [
-        "Order",
-        "OrderPos"
-      ],
+      "tags": ["Order", "OrderPos"],
       "description": "Title"
     },
     {
       "name": "receipt",
-      "tags": [
-        "Voucher",
-        "VoucherPos"
-      ],
+      "tags": ["Voucher", "VoucherPos"],
       "description": "Title"
     },
     {
       "name": "report",
-      "tags": [
-        "Report"
-      ]
+      "tags": ["Report"]
     },
     {
       "name": "tag",
-      "tags": [
-        "Tag"
-      ],
+      "tags": ["Tag"],
       "description": "Title"
     }
   ]
