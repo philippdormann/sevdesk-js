@@ -3,30 +3,13 @@
   "version": "0.0.6",
   "license": "MIT",
   "type": "module",
-  "scripts": {
-    "build": "unbuild"
-  },
-  "files": [
-    "./dist",
-    "./package.json"
-  ],
-  "main": "./dist/api.cjs",
-  "module": "./dist/api.mjs",
-  "types": "./dist/api.d.ts",
-  "exports": {
-    ".": {
-      "require": "./dist/api.cjs",
-      "import": "./dist/api.mjs",
-      "types": "./dist/api.d.ts"
-    }
-  },
+  "main": "src/index.ts",
   "description": "unofficial sevdesk js/ts client",
-  "dependencies": {
-    "axios": "1.6.5"
-  },
   "devDependencies": {
-    "@odit/swagger-axios-codegen": "^1.0.0",
-    "esno": "4.0.0",
-    "unbuild": "2.0.0"
+    "@hey-api/openapi-ts": "^0.90.8",
+    "@types/bun": "^1.3.6"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
   }
 }
