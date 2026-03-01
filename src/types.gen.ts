@@ -639,6 +639,69 @@ export type ValidationError = {
 };
 
 /**
+ * PrivateTransactionRule model, response format
+ *
+ * A rule defining which transactions to mark as private automatically.
+ */
+export type ModelPrivateTransactionRuleResponse = {
+    /**
+     * The entity id
+     */
+    id?: string;
+    /**
+     * The entity object name, PrivateTransactionRule
+     */
+    objectName?: string;
+    /**
+     * Date of entity creation
+     */
+    create?: string;
+    /**
+     * Date of last entity update
+     */
+    update?: string;
+    /**
+     * Client to which the entity belongs.
+     */
+    sevClient?: {
+        /**
+         * Unique identifier of the client
+         */
+        id?: string;
+        /**
+         * Model name, which is 'SevClient'
+         */
+        objectName?: string;
+    };
+    /**
+     * The payment purpose of transactions to match
+     */
+    paymentPurpose?: string | null;
+    /**
+     * The counterpart name of transactions to match
+     */
+    counterpartName?: string | null;
+};
+
+/**
+ * Request body to create a PrivateTransactionRule
+ */
+export type CreatePrivateTransactionRule = {
+    /**
+     * PrivateTransactionRule
+     */
+    objectName: string;
+    /**
+     * The purpose of transactions that you want to match
+     */
+    paymentPurpose?: string | null;
+    /**
+     * The counterpart name of transactions that you want to match
+     */
+    counterpartName?: string | null;
+};
+
+/**
  * Contact model
  *
  * Contact model
@@ -10959,6 +11022,116 @@ export type CheckAccountTransactionEnshrineResponses = {
 };
 
 export type CheckAccountTransactionEnshrineResponse = CheckAccountTransactionEnshrineResponses[keyof CheckAccountTransactionEnshrineResponses];
+
+export type ListPrivateTransactionRulesData = {
+    body?: never;
+    path?: never;
+    query?: never;
+    url: '/PrivateTransactionRule';
+};
+
+export type ListPrivateTransactionRulesErrors = {
+    /**
+     * Bad request
+     */
+    400: unknown;
+    /**
+     * Authentication required
+     */
+    401: unknown;
+    /**
+     * Server error
+     */
+    500: unknown;
+};
+
+export type ListPrivateTransactionRulesResponses = {
+    /**
+     * Successful operation
+     */
+    200: {
+        objects?: Array<ModelPrivateTransactionRuleResponse>;
+    };
+};
+
+export type ListPrivateTransactionRulesResponse = ListPrivateTransactionRulesResponses[keyof ListPrivateTransactionRulesResponses];
+
+export type CreatePrivateTransactionRuleData = {
+    body?: CreatePrivateTransactionRule;
+    path?: never;
+    query?: never;
+    url: '/PrivateTransactionRule';
+};
+
+export type CreatePrivateTransactionRuleErrors = {
+    /**
+     * Bad request
+     */
+    400: unknown;
+    /**
+     * Authentication required
+     */
+    401: unknown;
+    /**
+     * Validation error, you did not submit valid input
+     */
+    422: unknown;
+    /**
+     * Server error
+     */
+    500: unknown;
+};
+
+export type CreatePrivateTransactionRuleResponses = {
+    /**
+     * Created - Returns created rule
+     */
+    201: ModelPrivateTransactionRuleResponse;
+};
+
+export type CreatePrivateTransactionRuleResponse = CreatePrivateTransactionRuleResponses[keyof CreatePrivateTransactionRuleResponses];
+
+export type DeletePrivateTransactionRuleData = {
+    body?: never;
+    path: {
+        /**
+         * Id of the rule to delete
+         */
+        id: number;
+    };
+    query?: never;
+    url: '/PrivateTransactionRule/{id}';
+};
+
+export type DeletePrivateTransactionRuleErrors = {
+    /**
+     * Bad request
+     */
+    400: unknown;
+    /**
+     * Authentication required
+     */
+    401: unknown;
+    /**
+     * Conflict
+     */
+    409: unknown;
+    /**
+     * Server error
+     */
+    500: unknown;
+};
+
+export type DeletePrivateTransactionRuleResponses = {
+    /**
+     * Successful operation - entity deleted
+     */
+    200: {
+        objects?: Array<unknown>;
+    };
+};
+
+export type DeletePrivateTransactionRuleResponse = DeletePrivateTransactionRuleResponses[keyof DeletePrivateTransactionRuleResponses];
 
 export type GetNextCustomerNumberData = {
     body?: never;
