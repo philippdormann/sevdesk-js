@@ -17,6 +17,9 @@
     "./package.json",
     "./dist"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "description": "unofficial sevdesk js/ts client",
   "devDependencies": {
     "@hey-api/openapi-ts": "^0.93.1",
