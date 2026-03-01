@@ -6,8 +6,8 @@
   "main": "src/index.ts",
   "description": "unofficial sevdesk js/ts client",
   "devDependencies": {
-    "@hey-api/openapi-ts": "^0.90.8",
-    "@types/bun": "^1.3.6"
+    "@hey-api/openapi-ts": "^0.93.1",
+    "@types/bun": "^1.3.9"
   },
   "peerDependencies": {
     "typescript": "^5"
